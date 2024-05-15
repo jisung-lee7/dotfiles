@@ -1,0 +1,61 @@
+snippet desc "describe a test" b
+describe("$1", () => {
+	it("should $2", () => {
+		$3
+	})
+})
+endsnippet
+
+snippet it "create a test block" b
+it("should $1", () => {
+	$2
+})
+endsnippet
+
+snippet ait "create an async test block" b
+it('should $1', async () => {
+	$2
+})
+endsnippet
+
+snippet rfc "react functional component" b
+import type { FC } from 'react'
+
+interface $1Props {
+	$3
+}
+
+const ${1:`!v expand('%:t:r')`}: FC<$1Props> = (${2:props}) => {
+	return ${4:<></>}$0
+}
+endsnippet
+
+snippet useS "useState()" b
+const [$1, set${1/\w+/${0:/capitalize}/}] = useState($2);
+endsnippet 
+
+snippet useE "useEffect()" b
+useEffect(() => {
+	$0
+}, [$1])
+endsnippet
+
+snippet useCB "useCallback(fn, inputs)" b
+const ${1:callback} = useCallback(($2) => ${3:{
+	$4
+}}, [$5])
+endsnippet
+
+snippet useM "useMemo(fn, inputs)" b
+const ${1:memoized} = useMemo(() => ${2:{
+	$3
+}}, [$4])
+endsnippet
+
+snippet useDS "useDispatch()" b
+const dispatch${1:: AppDispatch} = useDispatch()
+endsnippet
+
+snippet useSL "useSelector(selector)" b
+const ${1:value} = useSelector((${2:state${3:: AppState} => $4}))
+endsnippet

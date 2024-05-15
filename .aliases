@@ -1,0 +1,66 @@
+#!/usr/bin/env bash
+
+# General
+### neoVim
+alias vi='nvim'
+### Tmux
+alias t='tmux'
+### Clear
+alias c='clear'
+### Tmux Kill Session
+alias tks='t kill-session -t '
+### go to previous directory
+alias ..='cd ..'
+### display file list(all, list, human-readable, file type)
+alias ls='ls -alhp'
+### display file list(all, list, human-readable, file type, time)
+alias lst='ls -alhpt'
+### display file list(all, list, human-readable, file type, size)
+alias lss='ls -alhpS'
+
+
+# Config
+### Config folder Open
+alias co='cd ~/dotfiles && vi'
+### Config shell read Command Open
+alias cco='vi ~/dotfiles/.profile'
+### Config Alias Open
+alias cao='vi ~/dotfiles/.aliases'
+### Config neoVim Open
+alias cvo='cd ~/dotfiles/.nvim && vi'
+### Config shell ReLoad read command
+alias crl='source ~/.zshrc'
+
+
+# Colima
+### ColimA Start
+alias cas='colima start --cpu 4 --memory 8'
+### ColimA Start With Kubernetes
+alias caswk='colima start --cpu 4 --memory 8 --kubernetes'
+### ColimA Terminate
+alias cat='colima stop'
+
+
+# Docker Compose
+### Docker Compose Up
+alias dcu='docker compose up'
+### Docker Compose Down
+alias dcd='docker compose down --remove-orphans'
+### Docker Compose Soft Purge
+alias dcsp='docker compose down --remove-orphans --rmi all'
+### Docker Compose Hard Purge
+alias dchp='docker compose down --remove-orphans -v --rmi all'
+
+
+# Git
+### Git Remote Prune Origin
+alias grpo='git remote prune origin'
+alias gsu='gh auth switch && gh auth setup-git'
+
+
+# Coding For Fun
+## Change directory
+### change directory to Coding for Fun
+alias cf="cd ~/code/personal/coding-for-fun-org"
+### change directory to frontend
+alias fe="cd frontend"
