@@ -8,23 +8,23 @@ M.config = function()
   local setup = {
     -- one of "all" or a list of languages
     ensure_installed = {
-      "typescript",
-      "tsx",
-      "javascript",
-      "scss",
       "html",
       "css",
+      "javascript",
+      "typescript",
+      "tsx",
+      "scss",
       "lua",
-      "vim",
-      "python",
       "markdown",
+      "vim",
+      "json",
+      "dockerfile",
+      "http",
+      "python",
       "go",
       "graphql",
-      "dockerfile",
-      "json",
       "regex",
       "yaml",
-      "http",
     },
     highlight = {
       -- disable because of an error. don't know why.
@@ -35,7 +35,7 @@ M.config = function()
       -- disable highlighting for the `tex` filetype, you need to include `latex` in this list as this is
       -- the name of the parser)
       -- list of language that will be disabled
-      disable = { "lua" },
+      disable = {},
     },
     autopairs = {
       enable = true,
