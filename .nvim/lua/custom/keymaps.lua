@@ -16,46 +16,55 @@ vim.g.maplocalleader = ","
 --   term_mode = "t",
 --   command_mode = "c",
 
--- Normal mode start --
--- Better window navigation
+
+-- ####### Normal mode
+
+-- # Better window navigation
 keymap("n", "<C-h>", "<C-w>h", opts)
 keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
--- Fast vertical move
+-- # Fast vertical move
 keymap("n", "<C-d>", "30j", opts)
 keymap("n", "<C-u>", "30k", opts)
 
--- Resize with arrows
-keymap("n", "<C-Up>", ":resize -2<CR>", opts)
-keymap("n", "<C-Down>", ":resize +2<CR>", opts)
-keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
-keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
+-- # Navigate tab
+keymap("n", "J", ":-tabmove<CR>", opts)
+keymap("n", "K", ":+tabmove<CR>", opts)
 
--- Navigate tab start --
-keymap("n", "}", ":+tabmove<CR>", opts)
-keymap("n", "{", ":-tabmove<CR>", opts)
--- Navigate tab end --
 
--- Visual mode start --
+
+
+
+
+
+-- ####### Visual mode
+
 -- Stay in indent mode
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
--- Visual mode end --
 
--- Visual Block mode start --
--- Move text up and down
+
+
+
+
+
+
+-- ####### Visual Block mode
+-- # Move text up and down
 keymap("x", "J", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
--- Visual Block mode end --
 
--- Telescope map start --
+
+
+-- ####### Telescope map
 keymap('n', '<Leader>f', ':Telescope find_files<CR>', opts)
 keymap('n', '<Leader>rg', ':Telescope live_grep<CR>', opts)
 keymap('v', '<Leader>rg', 'y<ESC>:Telescope live_grep default_text=<c-r>0<CR>', opts)
--- Telescope map end --
 
+
+-- ####### vim.cmd
 vim.cmd [[
   " copy current file path to clipboard
   nnoremap <Leader>cp :let @+ = expand("%")<CR>
