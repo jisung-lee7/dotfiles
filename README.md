@@ -63,6 +63,8 @@ Must be setted after Google Drive.
          ```
          https://chromewebstore.google.com/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb
          ```
+         1. Extensions/Options/Restore
+            - Choose your backup file
       - DeepL
          ```
          https://chromewebstore.google.com/detail/deepl-%EB%B2%88%EC%97%AD/cofdbpoegempjloogbagkncekinflcnj?utm_source=deeplcom-en
