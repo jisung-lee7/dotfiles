@@ -30,8 +30,10 @@ keymap("n", "<C-d>", "30j", opts)
 keymap("n", "<C-u>", "30k", opts)
 
 -- # Navigate tab
-keymap("n", "J", ":-tabmove<CR>", opts)
-keymap("n", "K", ":+tabmove<CR>", opts)
+keymap("n", "J", ":tabprevious<CR>", opts)
+keymap("n", "K", ":tabnext<CR>", opts)
+keymap("n", "<<", ":-tabmove<CR>", opts)
+keymap("n", ">>", ":+tabmove<CR>", opts)
 
 
 
