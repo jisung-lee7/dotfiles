@@ -27,7 +27,6 @@ spec "custom.autopairs" -- this should be after cmp
 spec "custom.test"
 spec "custom.markdown-preview"
 spec "custom.bookmarks"
-spec "custom.prisma" -- tree sitter is not working for some reason
 
 -- vim extra combinations start
 spec "custom.subversive"
