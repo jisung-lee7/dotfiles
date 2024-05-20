@@ -31,7 +31,6 @@ spec "custom.bookmarks"
 -- vim extra combinations start
 spec "custom.subversive"
 spec "custom.surround"
-spec "custom.replace-with-register"
 
 -- search and replace text
 spec "custom.spectre"
