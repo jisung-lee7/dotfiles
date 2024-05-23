@@ -77,7 +77,6 @@ Must be setted after Google Drive.
             - Disable
    
 
-
 ---
 ### :rocket: Logi Options+
 You must connect after Bluetooth connection.
@@ -114,6 +113,11 @@ You must connect after Bluetooth connection.
 
 ---
 ### :rocket: System settings
+### Menu bar
+| --- / Sound / Display / Wi-Fi / Google-Drive / Input source / Battery / Control center |
+
+
+---
 #### Change ENG/KOR convert keymap right command
    1. Please enter the following content in the terminal.
    ```
@@ -195,7 +199,6 @@ You must connect after Bluetooth connection.
 <img width="634" alt="image" src="https://github.com/jskurt/dotfiles/assets/97920073/d29a1597-0353-49de-87a4-8397d062f562">
 
 
-
 ---
 #### Mouse
    You must connect after Bluetooth connection.
@@ -212,6 +215,14 @@ You must connect after Bluetooth connection.
 
 
 ---
+#### FaceTime
+   1. FaceTime/Settings/You can be reached for FaceTime at
+      - Only use 1 phone number, 1 address.
+   2. Start new calls from
+      - Phone number.
+
+
+---
 #### Messages
    1. iMessage/Settings/You can be reached for messages at
       - Only use 1 phone number, 1 address.
@@ -219,15 +230,6 @@ You must connect after Bluetooth connection.
       - Phone number.
    3. Shared with You
       - Turn Off...
-
-
----
-#### FaceTime
-   1. FaceTime/Settings/You can be reached for FaceTime at
-      - Only use 1 phone number, 1 address.
-   2. Start new calls from
-      - Phone number.
-
 
 
 --- 
