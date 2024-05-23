@@ -251,11 +251,11 @@ function doIt() {
   echo "----------------------------------------------------------------------"
   echo "########## Create symbolic links"
   echo "----------------------------------------------------------------------"
-  ln -s ~/dotfiles/.tmux.conf ~/.config/tmux/tmux.conf
+  ln -s ~/dotfiles/.aliases ~/.aliases
+  ln -s ~/dotfiles/.p10k.zsh ~/.p10k.zsh
   ln -s ~/dotfiles/.alacritty.toml ~/.config/alacritty/alacritty.toml
   ln -s ~/dotfiles/.nvim ~/.config/nvim
-  ln -s ~/dotfiles/.p10k.zsh ~/.p10k.zsh
-  ln -s ~/dotfiles/.aliases ~/.aliases
+  ln -s ~/dotfiles/.tmux.conf ~/.config/tmux/tmux.conf
   ln -s ~/dotfiles/.exports ~/.exports
   ln -s ~/dotfiles/.extras ~/.extras
   ln -s ~/dotfiles/.profile ~/.zshrc
