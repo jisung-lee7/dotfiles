@@ -61,6 +61,6 @@ alias gsu='gh auth switch && gh auth setup-git'
 # Coding For Fun
 ## Change directory
 ### change directory to Coding for Fun
-alias cf="cd ~/code/personal/coding-for-fun-org"
+alias cf="cd ~/code/personal/coding-for-fun-org/"
 ### change directory to frontend
-alias fe="cd frontend"
+alias fe="cd ~/code/frontend/"
