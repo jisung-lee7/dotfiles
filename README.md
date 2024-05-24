@@ -236,11 +236,26 @@ You must connect after Bluetooth connection.
 ## Custom key bindings
 ### :rocket: Tmux
 - `Prefix` : Ctrl + b
-- `Prefix` + <kbd>|</kbd> : Split window vertical
-- `Prefix` + <kbd>\_</kbd> : Split window horizontal
-- `Prefix` + <kbd>j</kbd> : Focus to bottom pane
-- `Prefix` + <kbd>k</kbd> : Focus to top pane
-- `Prefix` + <kbd>h</kbd> : Focus to left pane
-- `Prefix` + <kbd>l</kbd> : Focus to right pane
-- `Prefix` + <kbd>r</kbd> : Rename window name
-- `Prefix` + <kbd>R</kbd> : Rename session name
+- `Prefix` + <kbd>|</kbd> : Split window vertical.
+- `Prefix` + <kbd>\_</kbd> : Split window horizontal.
+- `Prefix` + <kbd>j</kbd> : Focus to bottom pane.
+- `Prefix` + <kbd>k</kbd> : Focus to top pane.
+- `Prefix` + <kbd>h</kbd> : Focus to left pane.
+- `Prefix` + <kbd>l</kbd> : Focus to right pane.
+- `Prefix` + <kbd>r</kbd> : Rename window name.
+- `Prefix` + <kbd>R</kbd> : Rename session name.
+
+
+---
+### :rocket: Vimwiki
+ - `<Leader>ww` : Open default wiki index file.
+ - `<Leader>wt` : Open default wiki index file in a new tab.
+ - `<Leader>ws` : Select and open wiki index file.
+ - `<Leader>wd` : Delete wiki file you are in.
+ - `<Leader>wr` : Rename wiki file you are in.
+ - `<Enter>` : Follow/Create wiki link.
+ - `<Shift-Enter>` : Split and follow/create wiki link.
+ - `<Ctrl-Enter>` : Vertical split and follow/create wiki link.
+ - `<Backspace>` : Go back to parent(previous) wiki link.
+ - `<Tab>` : Find next wiki link.
+ - `<Shift-Tab>` : Find previous wiki link.
