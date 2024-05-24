@@ -1,35 +1,46 @@
 #!/usr/bin/env bash
 
 # General
-### neoVim
+### neoVIm
 alias vi='nvim'
 ### Tmux
 alias t='tmux'
 ### Clear
 alias c='clear'
-### Tmux Kill Session
-alias tks='t kill-session -t '
 ### go to previous directory
 alias ..='cd ..'
-### display file list(all, list, human-readable, file type)
+### display file LiSt(all, list, human-readable, file type)
 alias ls='ls -alhp'
-### display file list(all, list, human-readable, file type, time)
+### display file LiSt(all, list, human-readable, file type, Time)
 alias lst='ls -alhpt'
-### display file list(all, list, human-readable, file type, size)
+### display file LiSt(all, list, human-readable, file type, Size)
 alias lss='ls -alhpS'
-
+### Mkdir and Change directory
+function mc {
+  mkdir -p $1
+  cd $1
+}
+### what is MY IP
+alias myip="curl -s http://checkip.dyndns.org/ | sed 's/[a-zA-Z<>/ :]//g'"
 
 # Config
-### Config folder Open
-alias co='cd ~/dotfiles && vi'
-### Config shell read Command Open
-alias cco='vi ~/dotfiles/.profile'
-### Config Alias Open
-alias cao='vi ~/dotfiles/.aliases'
-### Config neoVim Open
-alias cvo='cd ~/dotfiles/.nvim && vi'
-### Config shell ReLoad read command
-alias crl='source ~/.zshrc'
+### config DOTfiles folder open
+alias dot='cd ~/dotfiles && nvim'
+### config ALIAs open
+alias alia='cd ~/dotfiles && nvim .aliases'
+### config NEOVIM open
+alias neovim='cd ~/dotfiles/.nvim && nvim'
+### config shell Reload read command
+alias r='source ~/.zshrc'
+### config .zsh open
+alias zshrc='cd ~/dotfiles && nvim .profile'
+
+
+# Tmux
+### Tmux List Sessions
+alias tls='tmux list-sessions'
+### Tmux Kill Session
+alias tks='tmux kill-session -t'
 
 
 # Colima
