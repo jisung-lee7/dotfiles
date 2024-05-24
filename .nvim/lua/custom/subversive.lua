@@ -1,11 +1,11 @@
 local M = {
-  "svermeulen/vim-subversive"
+  "svermeulen/vim-subversive",
 }
 
 M.config = function()
-  vim.cmd [[
+  vim.cmd([[
     nmap s <plug>(SubversiveSubstitute)
-  ]]
+  ]])
 end
 
 return M

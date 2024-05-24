@@ -2,11 +2,11 @@ local M = {
   "williamboman/mason-lspconfig.nvim",
   dependencies = {
     {
-      "williamboman/mason.nvim"
+      "williamboman/mason.nvim",
     },
     {
-      "neovim/nvim-lspconfig"
-    }
+      "neovim/nvim-lspconfig",
+    },
   },
 }
 
@@ -78,9 +78,8 @@ local function filter(arr, fn)
   return filtered
 end
 
-
 local function filterReactDTS(value)
-  return string.match(value.filename, 'react/index.d.ts') == nil
+  return string.match(value.filename, "react/index.d.ts") == nil
 end
 
 local function on_list(options)
@@ -88,32 +87,27 @@ local function on_list(options)
 
   if #items > 1 then
     local filtered_items = filter(items, filterReactDTS)
-    vim.fn.setqflist({}, ' ', { title = options.title, items = filtered_items, context = options.context })
+    vim.fn.setqflist({}, " ", { title = options.title, items = filtered_items, context = options.context })
 
     if #filtered_items > 1 then
-      vim.api.nvim_command('copen')
+      vim.api.nvim_command("copen")
     elseif #filtered_items == 1 then
-      vim.api.nvim_command('cfirst')
+      vim.api.nvim_command("cfirst")
     end
   elseif #items == 1 then
-    vim.fn.setqflist({}, ' ', { title = options.title, items = items, context = options.context })
-    vim.api.nvim_command('cfirst')
+    vim.fn.setqflist({}, " ", { title = options.title, items = items, context = options.context })
+    vim.api.nvim_command("cfirst")
   end
 end
 
 local function lsp_keymaps(bufnr)
   local options = { noremap = true, silent = true }
 
-  vim.keymap.set(
-    "n",
-    "gd",
-    function()
-      vim.lsp.buf.definition { on_list = on_list }
-    end,
-    { noremap = options.noremap, silent = options.silent, buffer = bufnr }
-  )
+  vim.keymap.set("n", "gd", function()
+    vim.lsp.buf.definition({ on_list = on_list })
+  end, { noremap = options.noremap, silent = options.silent, buffer = bufnr })
   vim.api.nvim_buf_set_keymap(bufnr, "n", "gh", "<cmd>lua vim.lsp.buf.hover()<CR>", options)
-  vim.api.nvim_buf_set_keymap(bufnr, "n", "gl", '<cmd>lua vim.diagnostic.open_float()<CR>', options)
+  vim.api.nvim_buf_set_keymap(bufnr, "n", "gl", "<cmd>lua vim.diagnostic.open_float()<CR>", options)
 end
 
 local function on_init(client)
@@ -144,7 +138,7 @@ M.config = function()
     -- "angularls",
     -- "gopls",
     -- "prismals",
-    "lua_ls"
+    "lua_ls",
   }
   local mason_setup = {
     ui = {

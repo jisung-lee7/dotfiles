@@ -1,14 +1,14 @@
 local M = {
   "ellisonleao/gruvbox.nvim",
   lazy = false,
-  priority = 1000
+  priority = 1000,
 }
 
 M.config = function()
   local gruvbox = require("gruvbox")
   local setup = {
     terminal_colors = true,
-    transparent_mode = true
+    transparent_mode = true,
   }
 
   gruvbox.setup(setup)

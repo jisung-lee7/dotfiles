@@ -16,7 +16,6 @@ vim.g.maplocalleader = ","
 --   term_mode = "t",
 --   command_mode = "c",
 
-
 -- ####### Normal mode
 
 -- # Better window navigation
@@ -35,39 +34,24 @@ keymap("n", "K", ":tabnext<CR>", opts)
 keymap("n", "<<", ":-tabmove<CR>", opts)
 keymap("n", ">>", ":+tabmove<CR>", opts)
 
-
-
-
-
-
-
 -- ####### Visual mode
 
 -- Stay in indent mode
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
 
-
-
-
-
-
-
 -- ####### Visual Block mode
 -- # Move text up and down
 keymap("x", "J", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
 
-
-
 -- ####### Telescope map
-keymap('n', '<Leader>f', ':Telescope find_files<CR>', opts)
-keymap('n', '<Leader>rg', ':Telescope live_grep<CR>', opts)
-keymap('v', '<Leader>rg', 'y<ESC>:Telescope live_grep default_text=<c-r>0<CR>', opts)
-
+keymap("n", "<Leader>f", ":Telescope find_files<CR>", opts)
+keymap("n", "<Leader>rg", ":Telescope live_grep<CR>", opts)
+keymap("v", "<Leader>rg", "y<ESC>:Telescope live_grep default_text=<c-r>0<CR>", opts)
 
 -- ####### vim.cmd
-vim.cmd [[
+vim.cmd([[
   " copy current file path to clipboard
   nnoremap <Leader>cp :let @+ = expand("%")<CR>
 
@@ -80,4 +64,4 @@ vim.cmd [[
   nnoremap <Leader>rc :%s/<C-r><C-w>//gc<Left><Left><Left>
   xnoremap <Leader>rp y:%s/\V<C-r>=escape(@", '/\')<CR>//g<Left><Left>
   xnoremap <Leader>rc y:'<,'>%s/\V<C-r>=escape(@", '/\')<CR>//gc<Left><Left><Left>
-]]
+]])

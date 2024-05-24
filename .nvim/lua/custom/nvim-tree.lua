@@ -3,25 +3,25 @@ local M = {
   dependencies = {
     {
       "nvim-tree/nvim-web-devicons",
-      lazy = true
-    }
-  }
+      lazy = true,
+    },
+  },
 }
 
 M.config = function()
   local nvim_tree = require("nvim-tree")
   local setup = {
     on_attach = function(bufnr)
-      local api = require('nvim-tree.api')
+      local api = require("nvim-tree.api")
 
       local function opts(desc)
-        return { desc = 'nvim-tree: ' .. desc, buffer = bufnr, noremap = true, silent = true, nowait = true }
+        return { desc = "nvim-tree: " .. desc, buffer = bufnr, noremap = true, silent = true, nowait = true }
       end
 
       api.config.mappings.default_on_attach(bufnr)
 
-      vim.keymap.set('n', 't', api.node.open.tab, opts('Open: New Tab'))
-      vim.keymap.set('n', '<escape>', api.tree.close, opts('Close'))
+      vim.keymap.set("n", "t", api.node.open.tab, opts("Open: New Tab"))
+      vim.keymap.set("n", "<escape>", api.tree.close, opts("Close"))
     end,
     update_focused_file = {
       enable = true,
@@ -72,9 +72,9 @@ M.config = function()
           local center_x = (screen_w - _width) / 2
           local layouts = {
             center = {
-              anchor = 'NW',
-              relative = 'editor',
-              border = 'single',
+              anchor = "NW",
+              relative = "editor",
+              border = "single",
               row = center_y,
               col = center_x,
               width = width,
@@ -83,9 +83,9 @@ M.config = function()
           }
 
           return layouts.center
-        end
-      }
-    }
+        end,
+      },
+    },
   }
 
   nvim_tree.setup(setup)

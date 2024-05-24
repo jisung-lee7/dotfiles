@@ -1,11 +1,11 @@
 local M = {
   "nvim-telescope/telescope.nvim",
-  branch = '0.1.x',
+  branch = "0.1.x",
   dependencies = {
     {
-      "nvim-lua/plenary.nvim"
-    }
-  }
+      "nvim-lua/plenary.nvim",
+    },
+  },
 }
 
 M.config = function()
@@ -37,14 +37,14 @@ M.config = function()
           ["<esc>"] = actions.close,
           ["<C-k>"] = "move_selection_previous",
           ["<C-j>"] = "move_selection_next",
-          ['<C-t>'] = fzf_multi_select,
-        }
+          ["<C-t>"] = fzf_multi_select,
+        },
       },
       sorting_strategy = "ascending",
       layout_config = {
-        prompt_position = "top"
-      }
-    }
+        prompt_position = "top",
+      },
+    },
   }
 
   telescope.setup(setup)

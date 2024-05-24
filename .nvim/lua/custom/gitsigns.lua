@@ -1,5 +1,5 @@
 local M = {
-  "lewis6991/gitsigns.nvim"
+  "lewis6991/gitsigns.nvim",
 }
 
 M.config = function()
@@ -10,7 +10,12 @@ M.config = function()
       change = { hl = "GitSignsChange", text = "|", numhl = "GitSignsChangeNr", linehl = "GitSignsChangeLn" },
       delete = { hl = "GitSignsDelete", text = "-", numhl = "GitSignsDeleteNr", linehl = "GitSignsDeleteLn" },
       topdelete = { hl = "GitSignsDelete", text = "‾", numhl = "GitSignsDeleteNr", linehl = "GitSignsDeleteLn" },
-      changedelete = { hl = "GitSignsChange", text = "~", numhl = "GitSignsChangeNr", linehl = "GitSignsChangeLn" },
+      changedelete = {
+        hl = "GitSignsChange",
+        text = "~",
+        numhl = "GitSignsChangeNr",
+        linehl = "GitSignsChangeLn",
+      },
     },
     signcolumn = true,
     numhl = false,
@@ -28,7 +33,7 @@ M.config = function()
       delay = 250,
       ignore_whitespace = false,
     },
-    current_line_blame_formatter = '<author>, <author_time:%Y-%m-%d> - <summary>',
+    current_line_blame_formatter = "<author>, <author_time:%Y-%m-%d> - <summary>",
     sign_priority = 6,
     update_debounce = 100,
     status_formatter = nil,

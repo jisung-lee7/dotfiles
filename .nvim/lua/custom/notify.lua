@@ -1,5 +1,5 @@
 local M = {
-  "rcarriga/nvim-notify"
+  "rcarriga/nvim-notify",
 }
 
 M.config = function()

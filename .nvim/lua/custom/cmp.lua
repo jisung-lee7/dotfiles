@@ -4,21 +4,21 @@ local M = {
   dependencies = {
     {
       "hrsh7th/cmp-nvim-lsp",
-      event = "InsertEnter"
+      event = "InsertEnter",
     },
     {
       "hrsh7th/cmp-buffer",
-      event = "InsertEnter"
+      event = "InsertEnter",
     },
     {
       "hrsh7th/cmp-path",
-      event = "InsertEnter"
+      event = "InsertEnter",
     },
     {
       "L3MON4D3/LuaSnip",
-      event = "InsertEnter"
-    }
-  }
+      event = "InsertEnter",
+    },
+  },
 }
 
 M.config = function()
@@ -27,14 +27,14 @@ M.config = function()
     mapping = {
       ["<C-k>"] = cmp.mapping.select_prev_item(),
       ["<C-j>"] = cmp.mapping.select_next_item(),
-      ["<CR>"] = cmp.mapping.confirm { select = true },
+      ["<CR>"] = cmp.mapping.confirm({ select = true }),
       ["<Tab>"] = cmp.mapping.select_next_item(),
       ["<S-Tab>"] = cmp.mapping.select_prev_item(),
     },
     sources = {
       { name = "nvim_lsp" },
       { name = "buffer" },
-      { name = "path" }
+      { name = "path" },
     },
     snippet = {
       -- REQUIRED - you must specify a snippet engine

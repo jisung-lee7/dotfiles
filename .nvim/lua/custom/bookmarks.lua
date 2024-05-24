@@ -1,5 +1,5 @@
 local M = {
-  "MattesGroeger/vim-bookmarks"
+  "MattesGroeger/vim-bookmarks",
 }
 
 return M

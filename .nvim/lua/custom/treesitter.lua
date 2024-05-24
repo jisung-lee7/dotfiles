@@ -1,6 +1,6 @@
 local M = {
   "nvim-treesitter/nvim-treesitter",
-  build = ":TSUpdate"
+  build = ":TSUpdate",
 }
 
 M.config = function()
@@ -42,7 +42,7 @@ M.config = function()
     },
     indent = {
       enable = true,
-    }
+    },
   }
 
   nvim_treesitter_config.setup(setup)

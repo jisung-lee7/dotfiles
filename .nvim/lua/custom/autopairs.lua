@@ -1,5 +1,5 @@
 local M = {
-  "windwp/nvim-autopairs"
+  "windwp/nvim-autopairs",
 }
 
 M.config = function()
@@ -11,7 +11,7 @@ M.config = function()
     ts_config = {
       lua = { "string", "source" },
       javascript = { "string", "template_string" },
-      java = false
+      java = false,
     },
     disable_filetype = { "TelescopePrompt", "spectre_panel" },
     fast_wrap = {
@@ -23,13 +23,13 @@ M.config = function()
       keys = "qwertyuiopzxcvbnmasdfghjkl",
       check_comma = true,
       highlight = "PmenuSel",
-      highlight_grey = "LineNr"
-    }
+      highlight_grey = "LineNr",
+    },
   }
 
   autopairs.setup(setup)
 
-  cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done { map_char = { tex = "" } })
+  cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done({ map_char = { tex = "" } }))
 end
 
 return M

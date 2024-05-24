@@ -1,5 +1,5 @@
 local M = {
-  "vimwiki/vimwiki"
+  "vimwiki/vimwiki",
 }
 
 M.init = function()
