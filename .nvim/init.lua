@@ -11,6 +11,7 @@ spec "custom.lsp.none-ls"
 spec "custom.lsp.lsp-signature"
 
 spec "custom.whichkey"
+spec "custom.notify"
 spec "custom.typescript"
 spec "custom.colorscheme"
 spec "custom.comment"
