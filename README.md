@@ -145,7 +145,8 @@ You must connect after Bluetooth connection.
    sudo launchctl load /Library/LaunchAgents/userkeymapping.plist
    ```
    2. System setting/Keyboard/Keyboard Shortcuts.../Input Sources
-      - Change 'Select the previous input source' to the 'Right command'.
+      - Change 'Select next source in Input menu' to the 'Right command'.
+      - DO NOT CHANGE 'Select the previous input source'.
 
 
 ---
@@ -195,7 +196,7 @@ You must connect after Bluetooth connection.
 ---
 #### Keyboard
    - follow image below
-<img width="485" alt="image" src="https://github.com/jskurt/dotfiles/assets/97920073/b7afe3f6-0a0a-4f26-872f-43eeb3abcd1d">
+<img width="487" alt="image" src="https://github.com/jskurt/dotfiles/assets/97920073/4b6f6877-dfdd-4f89-b91a-884cad6d0414">
 <img width="634" alt="image" src="https://github.com/jskurt/dotfiles/assets/97920073/d29a1597-0353-49de-87a4-8397d062f562">
 
 
