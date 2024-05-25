@@ -119,6 +119,13 @@ M.config = function()
       },
     },
 
+    f = {
+      name = "Telescope Find",
+      f = { "<cmd>Telescope find_files<CR>", "Find Files" },
+      e = { "<cmd>Telescope emoji<CR>", "Find Emoji" },
+      g = { "<cmd>Telescope live_grep<CR>", "Find Grep" },
+    },
+
     l = {
       name = "LSP",
       a = { "<cmd>lua vim.lsp.buf.code_action()<CR>", "Code Action" },
@@ -159,6 +166,11 @@ M.config = function()
   }
 
   local visual_mode_mappings = {
+    f = {
+      name = "Telescope Find",
+      g = { "y<ESC><cmd>Telescope grep_string<CR>", "Find Grep" },
+    },
+
     s = {
       name = "Search",
       s = { "<cmd>lua require('spectre').open_visual({select_word=true})<CR>", "Search with select word" },

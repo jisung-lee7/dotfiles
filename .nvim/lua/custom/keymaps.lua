@@ -46,11 +46,6 @@ keymap("v", ">", ">gv", opts)
 keymap("x", "J", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
 
--- ####### Telescope map
-keymap("n", "<Leader>f", ":Telescope find_files<CR>", opts)
-keymap("n", "<Leader>rg", ":Telescope live_grep<CR>", opts)
-keymap("v", "<Leader>rg", "y<ESC>:Telescope live_grep default_text=<c-r>0<CR>", opts)
-
 -- ####### vim.cmd
 vim.cmd([[
   " copy current file path to clipboard
