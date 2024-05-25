@@ -129,7 +129,7 @@ M.config = function()
     l = {
       name = "LSP",
       a = { "<cmd>lua vim.lsp.buf.code_action()<CR>", "Code Action" },
-      I = { "<cmd>LspInstallInfo<CR>", "Installer Info" },
+      i = { "<cmd>LspInfo<CR>", "Lsp Info" },
       r = { "<cmd>LspRestart<CR>", "Restart Lsp Server" },
     },
 
@@ -153,6 +153,11 @@ M.config = function()
       f = { "<cmd>ToggleTerm direction=float<CR>", "Float" },
       h = { "<cmd>ToggleTerm size=10 direction=horizontal<CR>", "Horizontal" },
       v = { "<cmd>ToggleTerm size=80 direction=vertical<CR>", "Vertical" },
+    },
+
+    M = {
+      "<cmd>:Mason<CR>",
+      "Mason",
     },
   }
 
