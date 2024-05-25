@@ -279,6 +279,7 @@ function doIt() {
   echo "----------------------------------------------------------------------"
   echo "########## Configurations are done!"
   echo "########## Do not forget to run 'Prefix + I' in tmux!"
+  echo "########## Do not forget to run 'Mason' and 'LspInfo' in neovim!"
   echo "----------------------------------------------------------------------"
 
 unset installPackages;
