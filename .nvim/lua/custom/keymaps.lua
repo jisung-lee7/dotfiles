@@ -17,6 +17,8 @@ vim.g.maplocalleader = ","
 --   command_mode = "c",
 
 -- ####### Normal mode
+-- # No use recording
+keymap("n", "q", "<Nop>", opts)
 
 -- # Better window navigation
 keymap("n", "<C-h>", "<C-w>h", opts)
@@ -35,7 +37,6 @@ keymap("n", "<<", ":-tabmove<CR>", opts)
 keymap("n", ">>", ":+tabmove<CR>", opts)
 
 -- ####### Visual mode
-
 -- Stay in indent mode
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
