@@ -31,6 +31,7 @@ This will install all the programs needed for development.
 After you install it do not for get, 
 1. Change your terminal font to 'Hack Nerd Font Mono'.
 2. Run 'Prefix + I' in tmux.
+3. Run 'Mason' and 'LspInfo' in neovim!
 
 :pushpin: **After that, you need to follow the instruction of each that**
 
