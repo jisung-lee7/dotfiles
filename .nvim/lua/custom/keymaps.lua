@@ -36,6 +36,9 @@ keymap("n", "K", ":tabnext<CR>", opts)
 keymap("n", "<<", ":-tabmove<CR>", opts)
 keymap("n", ">>", ":+tabmove<CR>", opts)
 
+-- # clear search hl
+keymap("n", "<escape>", ":nohlsearch<CR>", opts)
+
 -- ####### Visual mode
 -- Stay in indent mode
 keymap("v", "<", "<gv", opts)
