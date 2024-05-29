@@ -148,12 +148,19 @@ You must connect after Bluetooth connection.
    2. System setting/Keyboard/Keyboard Shortcuts.../Input Sources
       - Change 'Select next source in Input menu' to the 'Right command'.
       - DO NOT CHANGE 'Select the previous input source'.
+      - Disable Select the previous input source.
 
 
 ---
 #### Notifications
    - follow image below
 <img width="482" alt="image" src="https://github.com/jskurt/dotfiles/assets/97920073/5b01f96b-f96b-4a4a-a373-73b7512f70fc">
+
+
+---
+#### Sound
+   - follow image below
+<img width="480" alt="image" src="https://github.com/jskurt/dotfiles/assets/97920073/a003e7e9-5251-4257-9236-0a66d2b60522">
 
 
 ---
