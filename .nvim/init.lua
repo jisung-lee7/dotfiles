@@ -28,6 +28,7 @@ spec("custom.autopairs") -- this should be after cmp
 spec("custom.test")
 spec("custom.markdown-preview")
 spec("custom.bookmarks")
+spec("custom.indent-blankline")
 
 -- vim extra combinations start
 spec("custom.subversive")
