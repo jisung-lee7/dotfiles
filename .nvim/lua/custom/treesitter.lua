@@ -26,6 +26,7 @@ M.config = function()
       "regex",
       "yaml",
     },
+    sync_install = false,
     highlight = {
       -- disable because of an error. don't know why.
       -- false will disable the whole extension
