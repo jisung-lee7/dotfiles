@@ -41,7 +41,7 @@ M.config = function()
 		mapping = {
 			["<C-k>"] = cmp.mapping.select_prev_item(),
 			["<C-j>"] = cmp.mapping.select_next_item(),
-			["<CR>"] = cmp.mapping.confirm({ select = true }),
+			["<CR>"] = cmp.mapping.confirm({ select = false }),
 			["<Tab>"] = cmp.mapping(function(fallback)
 				if cmp.visible() then
 					cmp.select_next_item()
