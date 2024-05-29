@@ -8,6 +8,9 @@ local M = {
     {
       "xiyaowong/telescope-emoji",
     },
+    {
+      "nvim-telescope/telescope-ui-select.nvim",
+    },
   },
 }
 
@@ -61,11 +64,15 @@ M.config = function()
           vim.api.nvim_put({ ":" .. emoji.name .. ":" }, "c", false, true)
         end,
       },
+      ["ui-select"] = {
+        require("telescope.themes").get_dropdown({}),
+      },
     },
   }
 
   telescope.setup(setup)
   telescope.load_extension("emoji")
+  telescope.load_extension("ui-select")
 end
 
 return M
