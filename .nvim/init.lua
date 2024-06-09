@@ -10,6 +10,7 @@ spec("custom.lsp.mason")
 spec("custom.lsp.none-ls")
 spec("custom.lsp.lsp-signature")
 
+spec("custom.codesnap")
 spec("custom.whichkey")
 spec("custom.notify")
 spec("custom.typescript")
