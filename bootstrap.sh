@@ -7,6 +7,8 @@ function installPackages() {
   echo "----------------------------------------------------------------------"
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+  source ~/.zshrc
+
   echo $"\n\n\n"
   echo "----------------------------------------------------------------------"
   echo "########## Set Homebrew"
