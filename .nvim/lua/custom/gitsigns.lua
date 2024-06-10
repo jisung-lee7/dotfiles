@@ -18,7 +18,7 @@ M.config = function()
       },
     },
     signcolumn = true,
-    numhl = false,
+    numhl = true,
     linehl = false,
     word_diff = false,
     watch_gitdir = {
