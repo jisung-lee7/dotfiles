@@ -41,6 +41,7 @@ keymap("n", "<escape>", ":nohlsearch<CR>", opts)
 
 -- ####### Visual mode
 -- Stay in indent mode
+keymap("i", "<S-Tab>", "<C-D>", opts)
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
 
@@ -55,8 +56,8 @@ vim.cmd([[
   nnoremap <Leader>cp :let @+ = expand("%")<CR>
 
   " console log
-  nnoremap <Leader>cl :silent put=['console.log(\"<C-r><C-w>\", <C-r><C-w>);']<CR>-2==+
-  xnoremap <Leader>cl y:<C-u>silent put=['console.log(\"<C-r>"\", <C-r>");']<CR>-2==+
+  nnoremap <Leader>cl :silent put=['console.log(\"c.log ## <C-r><C-w> ##\", <C-r><C-w>);']<CR>-2==+
+  xnoremap <Leader>cl y:<C-u>silent put=['console.log(\"c.log ## <C-r>" ##\", <C-r>");']<CR>-2==+
 
   " CodeSnap
   xnoremap <Leader>cc :CodeSnap<CR>
