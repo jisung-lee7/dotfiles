@@ -10,7 +10,7 @@ I'm working on Mac OS based.
 If you are using others,, **Please change your computer.**:zipper_mouth_face: <br>
 (I'm sorry but I don't know how to install without Mac OS.)
 
-#### Where to clone this project
+### Where to clone this project
 
 It's totally up to you. I just cloned it inside my home directory folder using following command.
 
@@ -37,14 +37,12 @@ After you install it do not for get,
 
 
 
----
-### :rocket: Google Drive
+## :rocket: Google Drive
 1. "Google Drive.app" would like to start syncing.
    - OK
 
 
----
-### :rocket: Alfred
+## :rocket: Alfred
 Must be setted after Google Drive.
 1. Change System setting
    1. Keyboard/Keyboard Shortcuts.../Spotlight
@@ -55,8 +53,7 @@ Must be setted after Google Drive.
    - Select your saved preferences folder
 
 
----
-### :rocket: Brave-Browser
+## :rocket: Brave-Browser
 1. Settings
    1. Sync/Start using sysnc/I have a Sync Code
    2. install Extension
@@ -78,15 +75,13 @@ Must be setted after Google Drive.
             - Disable
    
 
----
-### :rocket: Logi Options+
+## :rocket: Logi Options+
 You must connect after Bluetooth connection.
 1. SETTINGS/Restore backup
    - RESTORE SETTINGS FROM BACKUP
 
 
----
-### :rocket: Mos
+## :rocket: Mos
 1. Execute the program 
 2. System settings/Privacy & Security
    - Open Anyway
@@ -103,8 +98,7 @@ You must connect after Bluetooth connection.
    - 1 
 
 
----
-### :rocket: Doll
+## :rocket: Doll
 1. Select icons you want
 2. Enable the following list
    - Launch at login
@@ -112,14 +106,12 @@ You must connect after Bluetooth connection.
    - Show notification as a red badge
 
 
----
-### :rocket: System settings
-### Menu bar
+## :rocket: System settings
+### :black_small_square: Menu bar
 | --- / Sound / Display / Wi-Fi / Google-Drive / Input source / Battery / Control center |
 
 
----
-#### Change ENG/KOR convert keymap right command
+### :black_small_square: Change ENG/KOR convert keymap right command
     1. Please enter the following content in the terminal.
     ```
     mkdir -p /Users/Shared/bin
@@ -151,8 +143,7 @@ You must connect after Bluetooth connection.
        - Disable Select the previous input source.
 
 
----
-#### Change Apple Press And Hold
+### :black_small_square: Change Apple Press And Hold
    1. Please enter the following content in the terminal.
    ```
    defaults write -g ApplePressAndHoldEnabled -bool false
@@ -160,88 +151,75 @@ You must connect after Bluetooth connection.
    2. You need to reboot for it to take effect.
    
 
----
-#### Notifications
+### :black_small_square: Notifications
    - follow image below
 <img width="482" alt="image" src="https://github.com/jskurt/dotfiles/assets/97920073/5b01f96b-f96b-4a4a-a373-73b7512f70fc">
 
 
----
-#### Sound
+### :black_small_square: Sound
    - follow image below
 <img width="480" alt="image" src="https://github.com/jskurt/dotfiles/assets/97920073/a003e7e9-5251-4257-9236-0a66d2b60522">
 
 
----
-#### Accessibility
+### :black_small_square: Accessibility
    1. Display/Pointer
       - OFF 'Shake mouse pointer to locate'
 
 
----
-#### Desktop & Dock
+### :black_small_square: Desktop & Dock
    - follow image below
 <img width="481" alt="image" src="https://github.com/jskurt/dotfiles/assets/97920073/c27c3888-a2e2-4636-97a1-a82424599873">
 
 
----
-#### Displays
+### :black_small_square: Displays
    1. Set 'More Space'
    2. Disable 'Automatically adjust brightness'
 
 
----
-#### Battery
+### :black_small_square: Battery
    1. Options...
       - follow image below
 <img width="460" alt="image" src="https://github.com/jskurt/dotfiles/assets/97920073/6d05e7d6-42c4-4317-b04a-90340c1fbff4">
 
 
----
-#### Lock Screen
+### :black_small_square: Lock Screen
    - follow image below
 <img width="487" alt="image" src="https://github.com/jskurt/dotfiles/assets/97920073/e401d54e-fe69-4d14-8514-af77b8991cb3">
 
 
----
-#### Passwords
+### :black_small_square: Passwords
    1. Password Options
       - Disable 'AutoFill Passwords and Passkeys'
    2. Enable 'Delete After Use'
 
 
----
-#### Keyboard
+### :black_small_square: Keyboard
    - follow image below
 <img width="487" alt="image" src="https://github.com/jskurt/dotfiles/assets/97920073/4b6f6877-dfdd-4f89-b91a-884cad6d0414">
 <img width="634" alt="image" src="https://github.com/jskurt/dotfiles/assets/97920073/d29a1597-0353-49de-87a4-8397d062f562">
 
 
----
-#### Mouse
+### :black_small_square: Mouse
    You must connect after Bluetooth connection.
    - follow image below
 <img width="489" alt="image" src="https://github.com/jskurt/dotfiles/assets/97920073/fb1ebf28-edef-472a-aa1f-7bcee9b928a5">
 
 
----
-#### Trackpad
+### :black_small_square: Trackpad
    - follow image below
 <img width="489" alt="image" src="https://github.com/jskurt/dotfiles/assets/97920073/b29d6381-8f3e-45f5-a044-6c94d2e9eab2">
 <img width="491" alt="image" src="https://github.com/jskurt/dotfiles/assets/97920073/b15cd5a6-cb61-4728-b470-8fc139572e57">
 <img width="490" alt="image" src="https://github.com/jskurt/dotfiles/assets/97920073/754fb040-a182-43b6-9f2a-0336af47f126">
 
 
----
-#### FaceTime
+### :black_small_square: FaceTime
    1. FaceTime/Settings/You can be reached for FaceTime at
       - Only use 1 phone number, 1 address.
    2. Start new calls from
       - Phone number.
 
 
----
-#### Messages
+### :black_small_square: Messages
    1. iMessage/Settings/You can be reached for messages at
       - Only use 1 phone number, 1 address.
    2. Start new conversations from
@@ -250,9 +228,8 @@ You must connect after Bluetooth connection.
       - Turn Off...
 
 
---- 
-## Custom key bindings
-### :rocket: Tmux
+## :rocket: Custom key bindings
+### :black_small_square: Tmux
 - `Prefix` : Ctrl + b
 - `Prefix` + <kbd>|</kbd> : Split window vertical.
 - `Prefix` + <kbd>\_</kbd> : Split window horizontal.
@@ -264,8 +241,7 @@ You must connect after Bluetooth connection.
 - `Prefix` + <kbd>R</kbd> : Rename session name.
 
 
----
-### :rocket: Vimwiki
+### :black_small_square: Vimwiki
  - `<Leader>ww` : Open default wiki index file.
  - `<Leader>wt` : Open default wiki index file in a new tab.
  - `<Leader>ws` : Select and open wiki index file.
