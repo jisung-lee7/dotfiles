@@ -30,6 +30,7 @@ spec("custom.test")
 spec("custom.markdown-preview")
 spec("custom.bookmarks")
 spec("custom.indent-blankline")
+spec("custom.nvim-scrollbar")
 
 -- vim extra combinations start
 spec("custom.subversive")
