@@ -75,3 +75,5 @@ alias gsu='gh auth switch && gh auth setup-git'
 alias cf="cd ~/code/personal/coding-for-fun-org/"
 ### change directory to frontend
 alias fe="cd ~/code/frontend/"
+### change directory to Play-JavaScript
+alias pjs="cd ~/code/personal/play-javascript/"
