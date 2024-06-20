@@ -33,6 +33,7 @@ local options = {
   scrolloff = 5,
   spelllang = "en_us",
   spell = true,
+  startofline = true,
 }
 
 vim.loader.enable()
