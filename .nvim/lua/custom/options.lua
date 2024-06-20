@@ -31,6 +31,8 @@ local options = {
   signcolumn = "yes",                     -- always show the sign column, otherwise it would shift the text each time
   wrap = false,                           -- display lines as one long line
   scrolloff = 5,
+  spelllang = "en_us",
+  spell = true,
 }
 
 vim.loader.enable()
