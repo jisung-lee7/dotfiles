@@ -35,6 +35,9 @@ alias r='source ~/.zshrc'
 ### config .zsh open
 alias zshrc='cd ~/dotfiles && nvim .profile'
 
+# Nodemon
+### run nodemon
+alias nm='nodemon'
 
 # Tmux
 ### Tmux List Sessions
