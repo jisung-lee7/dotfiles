@@ -31,13 +31,13 @@ M.config = function()
         text = "●",
         priority = 0,
         gui = nil,
-        color = "yellow",
+        color = nil,
         cterm = nil,
         color_nr = nil, -- cterm
         highlight = "Normal",
       },
       Search = {
-        text = { "-", "=" },
+        text = { "=", "=" },
         priority = 1,
         gui = nil,
         color = nil,
@@ -46,7 +46,7 @@ M.config = function()
         highlight = "Search",
       },
       Error = {
-        text = { "-", "=" },
+        text = { "-", "-" },
         priority = 2,
         gui = nil,
         color = nil,
@@ -55,7 +55,7 @@ M.config = function()
         highlight = "DiagnosticVirtualTextError",
       },
       Warn = {
-        text = { "-", "=" },
+        text = { "-", "-" },
         priority = 3,
         gui = nil,
         color = nil,
@@ -64,7 +64,7 @@ M.config = function()
         highlight = "DiagnosticVirtualTextWarn",
       },
       Info = {
-        text = { "-", "=" },
+        text = { "-", "-" },
         priority = 4,
         gui = nil,
         color = nil,
@@ -73,7 +73,7 @@ M.config = function()
         highlight = "DiagnosticVirtualTextInfo",
       },
       Hint = {
-        text = { "-", "=" },
+        text = { "-", "-" },
         priority = 5,
         gui = nil,
         color = nil,
@@ -82,7 +82,7 @@ M.config = function()
         highlight = "DiagnosticVirtualTextHint",
       },
       Misc = {
-        text = { "-", "=" },
+        text = { "-", "-" },
         priority = 6,
         gui = nil,
         color = nil,
@@ -91,7 +91,8 @@ M.config = function()
         highlight = "Normal",
       },
       GitAdd = {
-        text = "┆",
+        -- text = "┆",
+        text = "✚",
         priority = 7,
         gui = nil,
         color = nil,
@@ -100,7 +101,8 @@ M.config = function()
         highlight = "GitSignsAdd",
       },
       GitChange = {
-        text = "┆",
+        -- text = "┆",
+        text = "✔️",
         priority = 7,
         gui = nil,
         color = nil,
@@ -109,7 +111,8 @@ M.config = function()
         highlight = "GitSignsChange",
       },
       GitDelete = {
-        text = "▁",
+        -- text = "▁",
+        text = "✘",
         priority = 7,
         gui = nil,
         color = nil,
