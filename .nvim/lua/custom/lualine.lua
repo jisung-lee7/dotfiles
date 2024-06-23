@@ -5,6 +5,16 @@ local M = {
 
 M.config = function()
 	local lualine = require("lualine")
+	local jskurt_powerline_dark = require("lualine.themes.powerline_dark")
+	jskurt_powerline_dark.inactive.a.bg = "darkgray"
+	jskurt_powerline_dark.inactive.a.fg = "black"
+
+	-- jskurt_powerline_dark.inactive.b.bg = "#444444"
+	jskurt_powerline_dark.inactive.b.fg = "white"
+	--
+	jskurt_powerline_dark.inactive.c.bg = "#1C1C1C"
+	jskurt_powerline_dark.inactive.c.fg = "inactivegray"
+
 	local function tab_dynamic_color()
 		if vim.bo.modified then
 			return { bg = "#00C8EC", fg = "#000000" }
@@ -15,7 +25,8 @@ M.config = function()
 	local setup = {
 		options = {
 			icons_enabled = true,
-			theme = "powerline_dark",
+			-- theme = "powerline_dark",
+			theme = jskurt_powerline_dark,
 			-- component_separators = { left = "", right = "" },
 			-- section_separators = { left = "", right = "" },
 			component_separators = { left = "|", right = "" },
