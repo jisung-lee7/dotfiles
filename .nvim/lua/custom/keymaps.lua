@@ -53,15 +53,15 @@ keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
 -- ####### vim.cmd
 vim.cmd([[
   " copy current file path to clipboard
-  nnoremap <Leader>cp :let @+ = expand("%")<CR>
+  nnoremap <silent> <Leader>cp :let @+ = expand("%")<CR>
 
   " console log
-  nnoremap <Leader>cl :silent put=['console.log(`c.log ## <C-r><C-w> ##`, <C-r><C-w>);']<CR>-2==+
-  xnoremap <Leader>cl y:<C-u>silent put=['console.log(`c.log ## <C-r>" ##`, <C-r>");']<CR>-2==+
+  nnoremap <silent> <Leader>cl :put=['console.log(`c.log ## <C-r><C-w> ##`, <C-r><C-w>);']<CR>-2==+
+  xnoremap <silent> <Leader>cl y:<C-u> put=['console.log(`c.log ## <C-r>" ##`, <C-r>");']<CR>-2==+
 
   " CodeSnap
-  xnoremap <Leader>cc :CodeSnap<CR>
-  xnoremap <Leader>cs :CodeSnapSave<CR>
+  xnoremap <silent> <Leader>cc :CodeSnap<CR>
+  xnoremap <silent> <Leader>cs :CodeSnapSave<CR>
 
   " replace
   nnoremap <Leader>rp :%s/<C-r><C-w>//g<Left><Left>
