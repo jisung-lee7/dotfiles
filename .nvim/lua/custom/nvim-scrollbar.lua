@@ -160,6 +160,7 @@ M.config = function()
     virt_priority = 1,
     nearest_only = true,
     nearest_float_when = "never",
+    override_lens = function() end,
   })
   scrollbar.setup(setup)
 end
