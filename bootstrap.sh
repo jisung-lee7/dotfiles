@@ -60,15 +60,7 @@ function installPackages() {
 
   echo $"\n\n\n"
   echo "----------------------------------------------------------------------"
-  echo "########## Add additional taps"
-  echo "----------------------------------------------------------------------"
-  # ref: https://github.com/Homebrew/homebrew-cask/blob/master/USAGE.md#additional-taps-optional
-  brew tap homebrew/cask-fonts
-
-  echo $"\n\n\n"
-  echo "----------------------------------------------------------------------"
   echo "########## Install fonts for Hack Nerd Font Mono"
-  # dependency: brew tap homebrew/cask-fonts #######"
   echo "----------------------------------------------------------------------"
   brew install --cask font-hack-nerd-font
 
