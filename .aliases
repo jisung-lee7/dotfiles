@@ -71,6 +71,9 @@ alias dchp='docker compose down --remove-orphans -v --rmi all'
 alias grpo='git remote prune origin'
 alias gsu='gh auth switch && gh auth setup-git'
 
+### Git Reflog --date=iso
+alias gr='git reflog --date=iso'
+
 
 # Coding For Fun
 ## Change directory
