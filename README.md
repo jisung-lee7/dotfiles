@@ -107,6 +107,8 @@ You must connect after Bluetooth connection.
 
 
 ## :rocket: System settings
+:loud_sound: The following settings apply to macOS Sonoma only. 
+
 ### :black_small_square: Menu bar
 | --- / Sound / Display / Wi-Fi / Google-Drive / Input source / Battery / Control center |
 
