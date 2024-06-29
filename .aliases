@@ -85,3 +85,5 @@ alias cf="cd ~/code/personal/coding-for-fun-org/"
 alias fe="cd ~/code/frontend/"
 ### change directory to Play-JavaScript
 alias pjs="cd ~/code/personal/play-javascript/"
+### change directory to Play-TypeScript
+alias pts="cd ~/code/personal/play-typescript/"
