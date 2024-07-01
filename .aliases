@@ -87,3 +87,5 @@ alias fe="cd ~/code/frontend/"
 alias pjs="cd ~/code/personal/play-javascript/"
 ### change directory to Play-TypeScript
 alias pts="cd ~/code/personal/play-typescript/"
+### change directory to Play-NextJs14
+alias pnj="cd ~/code/personal/play-nextjs14/"
