@@ -27,8 +27,8 @@ keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
 -- # Fast vertical move
-keymap("n", "<C-d>", "30j", opts)
-keymap("n", "<C-u>", "30k", opts)
+keymap("n", "<C-d>", "20j", opts)
+keymap("n", "<C-u>", "20k", opts)
 
 -- # Navigate tab
 keymap("n", "J", ":tabprevious<CR>", opts)
@@ -36,8 +36,11 @@ keymap("n", "K", ":tabnext<CR>", opts)
 keymap("n", "<<", ":-tabmove<CR>", opts)
 keymap("n", ">>", ":+tabmove<CR>", opts)
 
--- # clear search hl
+-- # Clear search hl
 keymap("n", "<escape>", ":nohlsearch<CR>", opts)
+
+-- # Previous end of word
+keymap("n", "B", "ge", opts)
 
 -- ####### Visual mode
 -- Stay in indent mode
