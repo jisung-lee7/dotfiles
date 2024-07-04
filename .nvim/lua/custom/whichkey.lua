@@ -142,7 +142,7 @@ M.config = function()
 			name = "Test",
 			o = { "<cmd>TestNearest<CR>", "Nearest" },
 			w = {
-				"<cmd>!tmux split-window -h<CR><cmd>!tmux send-keys 'yarn test:watch <C-r>%' C-m;<CR><cmd>!tmux select-pane -t 0<CR>",
+				"<cmd>silent !tmux split-window -h<CR><cmd>silent !tmux send-keys 'yarn test:watch <C-r>%' C-m;<CR><cmd>silent !tmux select-pane -t 0<CR>",
 				"Nearest watch",
 			},
 			r = { "<cmd>lua require 'rest-nvim'.run()<CR>", "Run REST-API" },
