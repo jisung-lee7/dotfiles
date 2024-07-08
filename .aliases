@@ -85,9 +85,15 @@ alias fe="cd ~/code/frontend/"
 alias pn="cd ~/code/personal/"
 ### change directory to Coding for Fun
 alias cf="cd ~/code/frontend/coding-for-fun-org/"
+### change directory to Coding for Fun Frontend
+alias cff="cd ~/code/frontend/coding-for-fun-org/frontend/"
 ### change directory to Play-JavaScript
 alias pjs="cd ~/code/personal/play-javascript/"
 ### change directory to Play-TypeScript
 alias pts="cd ~/code/personal/play-typescript/"
 ### change directory to Play-NextJs14
 alias pnj="cd ~/code/personal/play-nextjs14/"
+### change directory to Play-JesT
+alias pjt="cd ~/code/personal/play-jest/"
+### change directory to Play-ReactTestingLibrary
+alias prtl="cd ~/code/personal/play-RTL/"
