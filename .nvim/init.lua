@@ -26,6 +26,7 @@ spec("custom.gitsigns")
 spec("custom.floaterm")
 spec("custom.cmp")
 spec("custom.autopairs") -- this should be after cmp
+spec("custom.autotag")
 spec("custom.test")
 spec("custom.markdown-preview")
 spec("custom.bookmarks")
