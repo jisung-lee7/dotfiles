@@ -126,7 +126,33 @@ M.config = function()
             local bufnr = buflist[winnr]
             local mod = vim.fn.getbufvar(bufnr, "&mod")
 
-            return name .. (mod == 1 and " +" or "")
+            -- return name .. (mod == 1 and " +" or "")
+
+            if vim.bo[bufnr].buftype == "" then
+              return name .. (mod == 1 and " +" or "")
+            else
+              vim.bo.modified = false
+              for i = 1, #buflist do
+                if buflist[i] ~= bufnr then
+                  -- Get the name of the previously active buffer
+                  local prev_bufname = vim.fn.bufname(buflist[i])
+
+                  if prev_bufname == "" then
+                    if vim.fn.bufname(bufnr) == "" then
+                      return "file search"
+                    elseif string.find(vim.fn.bufname(bufnr), "NvimTree") then
+                      return "file tree"
+                    elseif string.find(vim.fn.bufname(bufnr), "lazygit") then
+                      return "git"
+                    end
+                    return name
+                  end
+
+                  -- Return the name of the previously active buffer
+                  return vim.fn.fnamemodify(prev_bufname, ":t")
+                end
+              end
+            end
           end,
         },
       },
