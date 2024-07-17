@@ -78,7 +78,7 @@ alias gr='git reflog --date=iso'
 # Coding For Fun
 ## Change directory
 ### change directory to vimwiki
-alias wt="cd ~/vimwiki && nvim"
+alias wt="cd ~/jisung-lee-wiki/vimwiki/ && nvim"
 ### change directory to FrontEnd
 alias fe="cd ~/code/frontend/"
 ### change directory to PersoNal
