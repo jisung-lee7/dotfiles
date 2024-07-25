@@ -27,6 +27,10 @@ keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
 -- # Fast vertical move
+keymap("n", "j", "gj", opts)
+keymap("n", "k", "gk", opts)
+
+-- # Fast vertical move
 keymap("n", "<C-d>", "20j", opts)
 keymap("n", "<C-u>", "20k", opts)
 
