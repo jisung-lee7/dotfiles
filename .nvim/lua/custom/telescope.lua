@@ -26,7 +26,7 @@ M.config = function()
 
     if #selections > 1 then
       for _, entry in ipairs(selections) do
-        vim.cmd(string.format("%s %s", ":tabnew!", entry.value))
+        vim.cmd(string.format("%s %s", ":tabnew!", entry.filename))
       end
       vim.cmd(":stopinsert")
     else
