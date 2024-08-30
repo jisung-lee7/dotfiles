@@ -24,6 +24,7 @@ M.config = function()
     highlight NvimTreeNormal guibg=NONE ctermbg=NONE
     highlight NvimTreeNormalNC guibg=NONE ctermbg=NONE
     highlight NvimTreeNormalNC guibg=NONE ctermbg=NONE
+    highlight NvimTreeCursorLine guifg=#ef8d34
     highlight GitSignsCurrentLineBlame guifg=#ffffff
     highlight PmenuSel guibg=gray ctermbg=gray
   ]])
