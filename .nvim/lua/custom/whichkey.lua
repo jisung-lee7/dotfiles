@@ -263,12 +263,25 @@ M.config = function()
 		},
 		{
 			mode = "n",
+			"<leader>li",
+			"<cmd>LspInfo<CR>",
+			desc = "Lsp Info",
+			nowait = true,
+		},
+		{
+			mode = "n",
 			"<leader>lr",
 			"<cmd>LspRestart<CR>",
 			desc = "Restart Lsp Server",
 			nowait = true,
 		},
-
+		{
+			mode = "n",
+			"<leader>M",
+			"<cmd>Mason<CR>",
+			desc = "Mason",
+			nowait = true,
+		},
 		{
 			mode = "n",
 			"<leader>s",
