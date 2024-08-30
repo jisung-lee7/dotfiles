@@ -1,193 +1,375 @@
 local M = {
 	"folke/which-key.nvim",
+	event = "VeryLazy",
 }
 
 M.config = function()
 	local setup = {
-		plugins = {
-			marks = true, -- shows a list of your marks on ' and `
-			registers = true, -- shows your registers on " in NORMAL or <C-r> in INSERT mode
-			spelling = {
-				enabled = true, -- enabling this will show WhichKey when pressing z= to select spelling suggestions
-				suggestions = 20, -- how many suggestions should be shown in the list?
-			},
-			-- the presets plugin, adds help for a bunch of default keybindings in Neovim
-			-- No actual key bindings are created
-			presets = {
-				operators = false, -- adds help for operators like d, y, ... and registers them for motion / text object completion
-				motions = true, -- adds help for motions
-				text_objects = true, -- help for text objects triggered after entering an operator
-				windows = true, -- default bindings on <c-w>
-				nav = true, -- misc bindings to work with windows
-				z = true, -- bindings for folds, spelling and others prefixed with z
-				g = true, -- bindings for prefixed with g
-			},
-		},
-		-- add operators that will trigger motion and text object completion
-		-- to enable all native operators, set the preset / operators plugin above
-		-- operators = { gc = "Comments" },
-		key_labels = {
-			-- override the label used to display some keys. It doesn't effect WK in any other way.
-			-- For example:
-			-- ["<space>"] = "SPC",
-			-- ["<cr>"] = "RET",
-			-- ["<tab>"] = "TAB",
-		},
-		icons = {
-			breadcrumb = "»", -- symbol used in the command line area that shows your active key combo
-			separator = "➜", -- symbol used between a key and it's label
-			group = "+", -- symbol prepended to a group
-		},
-		popup_mappings = {
-			scroll_down = "<c-d>", -- binding to scroll down inside the popup
-			scroll_up = "<c-u>", -- binding to scroll up inside the popup
-		},
-		window = {
-			border = "rounded", -- none, single, double, shadow
-			position = "bottom", -- bottom, top
-			margin = { 1, 0, 1, 0 }, -- extra window margin [top, right, bottom, left]
-			padding = { 2, 2, 2, 2 }, -- extra window padding [top, right, bottom, left]
-			winblend = 0,
-		},
-		layout = {
-			height = { min = 4, max = 50 }, -- min and max height of the columns
-			width = { min = 20, max = 50 }, -- min and max width of the columns
-			spacing = 3, -- spacing between columns
-			align = "left", -- align columns left, center or right
-		},
-		ignore_missing = true, -- enable this to hide mappings for which you didn't specify a label
-		hidden = { "<silent>", "<cmd>", "<Cmd>", "<CR>", "call", "lua", "^:", "^ " }, -- hide mapping boilerplate
-		show_help = true, -- show help message on the command line when the popup is visible
-		triggers = "auto", -- automatically setup triggers
-		-- triggers = {"<leader>"} -- or specify a list manually
-		triggers_blacklist = {
-			-- list of mode / prefixes that should never be hooked by WhichKey
-			-- this is mostly relevant for key maps that start with a native binding
-			-- most people should not need to change this
-			i = { "j", "k" },
-			v = { "j", "k" },
-		},
+		preset = "modern",
 	}
 
-	local normal_mode_opts = {
-		mode = "n", -- NORMAL mode
-		prefix = "<leader>",
-		buffer = nil, -- Global mappings. Specify a buffer number for buffer local mappings
-		silent = true, -- use `silent` when creating keymaps
-		noremap = true, -- use `noremap` when creating keymaps
-		nowait = true, -- use `nowait` when creating keymaps
-	}
-
-	local normal_mode_mappings = {
-		[","] = { "<cmd>BookmarkToggle<CR>", "Bookmark Toggle" },
-		["a"] = { "<cmd>BookmarkShowAll<CR>", "Bookmark Show All" },
-		["j"] = { "<cmd>BookmarkNext<CR>", "Bookmark Next" },
-		["k"] = { "<cmd>BookmarkPrev<CR>", "Bookmark Prev" },
-		["x"] = { "<cmd>BookmarkClearAll<CR>", "Bookmark Clear All" },
-		["1"] = { "1gt", "Tab 1" },
-		["2"] = { "2gt", "Tab 2" },
-		["3"] = { "3gt", "Tab 3" },
-		["4"] = { "4gt", "Tab 4" },
-		["5"] = { "5gt", "Tab 5" },
-		["6"] = { "6gt", "Tab 6" },
-		["7"] = { "7gt", "Tab 7" },
-		["8"] = { "8gt", "Tab 8" },
-		["9"] = { "9gt", "Tab 9" },
-		["e"] = { "<cmd>NvimTreeToggle<CR>", "Explorer" },
-		["w"] = { "<cmd>w!<CR>", "Save" },
-		["q"] = { "<C-w>o:q!<CR>", "Close Buffer" },
-		["Q"] = { "<cmd>q!<CR>", "Quit" },
-		["<CR>"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
-
-		g = {
-			name = "Git",
-			g = { "<cmd>FloatermNew lazygit<CR>", "Lazygit" },
-			j = { "<cmd>lua require 'gitsigns'.next_hunk()<CR>", "Next Hunk" },
-			k = { "<cmd>lua require 'gitsigns'.prev_hunk()<CR>", "Prev Hunk" },
-			l = { "<cmd>lua require 'gitsigns'.blame_line()<CR>", "Blame" },
-			p = { "<cmd>lua require 'gitsigns'.preview_hunk()<CR>", "Preview Hunk" },
-			r = { "<cmd>lua require 'gitsigns'.reset_hunk()<CR>", "Reset Hunk" },
-			R = { "<cmd>lua require 'gitsigns'.reset_buffer()<CR>", "Reset Buffer" },
-			s = { "<cmd>lua require 'gitsigns'.stage_hunk()<CR>", "Stage Hunk" },
-			u = {
-				"<cmd>lua require 'gitsigns'.undo_stage_hunk()<CR>",
-				"Undo Stage Hunk",
-			},
-			d = {
-				"<cmd>Gitsigns diffthis HEAD<CR>",
-				"Diff",
-			},
+	local mappings = {
+		{
+			mode = "n",
+			"<leader>,",
+			"<cmd>BookmarkToggle<CR>",
+			desc = "Bookmark Toggle",
+			nowait = true,
+		},
+		{
+			mode = "n",
+			"<leader>a",
+			"<cmd>BookmarkShowAll<CR>",
+			desc = "Bookmark Show All",
+			nowait = true,
+		},
+		{
+			mode = "n",
+			"<leader>j",
+			"<cmd>BookmarkNext<CR>",
+			desc = "Bookmark Next",
+			nowait = true,
+		},
+		{
+			mode = "n",
+			"<leader>k",
+			"<cmd>BookmarkPrev<CR>",
+			desc = "Bookmark Prev",
+			nowait = true,
+		},
+		{
+			mode = "n",
+			"<leader>x",
+			"<cmd>BookmarkClearAll<CR>",
+			desc = "Bookmark Clear All",
+			nowait = true,
+		},
+		{
+			mode = "n",
+			"<leader>1",
+			"1gt",
+			desc = "Tab 1",
+			nowait = true,
+		},
+		{
+			mode = "n",
+			"<leader>2",
+			"2gt",
+			desc = "Tab 2",
+			nowait = true,
+		},
+		{
+			mode = "n",
+			"<leader>3",
+			"3gt",
+			desc = "Tab 3",
+			nowait = true,
+		},
+		{
+			mode = "n",
+			"<leader>4",
+			"4gt",
+			desc = "Tab 4",
+			nowait = true,
+		},
+		{
+			mode = "n",
+			"<leader>5",
+			"5gt",
+			desc = "Tab 5",
+			nowait = true,
+		},
+		{
+			mode = "n",
+			"<leader>6",
+			"6gt",
+			desc = "Tab 6",
+			nowait = true,
+		},
+		{
+			mode = "n",
+			"<leader>7",
+			"7gt",
+			desc = "Tab 7",
+			nowait = true,
+		},
+		{
+			mode = "n",
+			"<leader>8",
+			"8gt",
+			desc = "Tab 8",
+			nowait = true,
+		},
+		{
+			mode = "n",
+			"<leader>9",
+			"9gt",
+			desc = "Tab 9",
+			nowait = true,
+		},
+		{
+			mode = "n",
+			"<leader>e",
+			"<cmd>NvimTreeToggle<CR>",
+			desc = "Explorer",
+			nowait = true,
+		},
+		{
+			mode = "n",
+			"<leader>w",
+			"<cmd>w!<CR>",
+			desc = "Save",
+			nowait = false,
+		},
+		{
+			mode = "n",
+			"<leader>q",
+			"<C-w>o:q!<CR>",
+			desc = "Close Buffer",
+			nowait = true,
+		},
+		{
+			mode = "n",
+			"<leader>Q",
+			"<cmd>q!<CR>",
+			desc = "Quit",
+			nowait = true,
+		},
+		{
+			mode = "n",
+			"<leader><CR>",
+			"<cmd>nohlsearch<CR>",
+			desc = "No Highlight",
+			nowait = true,
 		},
 
-		f = {
-			name = "Telescope Find",
-			f = { "<cmd>Telescope find_files<CR>", "Find Files" },
-			e = { "<cmd>Telescope emoji<CR>", "Find Emoji" },
-			g = { "<cmd>Telescope live_grep<CR>", "Find Grep" },
+		{
+			mode = "n",
+			"<leader>g",
+			group = "Git",
+			nowait = false,
+		},
+		{
+			mode = "n",
+			"<leader>gg",
+			"<cmd>FloatermNew lazygit<CR>",
+			desc = "Lazygit",
+			nowait = true,
+		},
+		{
+			mode = "n",
+			"<leader>gj",
+			"<cmd>lua require 'gitsigns'.next_hunk()<CR>",
+			desc = "Next Hunk",
+			nowait = true,
+		},
+		{
+			mode = "n",
+			"<leader>gk",
+			"<cmd>lua require 'gitsigns'.prev_hunk()<CR>",
+			desc = "Prev Hunk",
+			nowait = true,
+		},
+		{
+			mode = "n",
+			"<leader>gl",
+			"<cmd>lua require 'gitsigns'.blame_line()<CR>",
+			desc = "Blame",
+			nowait = true,
+		},
+		{
+			mode = "n",
+			"<leader>gu",
+			"<cmd>silent !gh auth switch && gh auth setup-git && tmux refresh-client -S<cr>",
+			desc = "gh switch user",
+			nowait = true,
+		},
+		{
+			mode = "n",
+			"<leader>gd",
+			"<cmd>Gitsigns diffthis HEAD<CR>",
+			desc = "Diff",
+			nowait = true,
+		},
+		{
+			mode = "n",
+			"<leader>gD",
+			"<cmd>wincmd p | q<CR>",
+			desc = "Go back to original window",
+			nowait = true,
+		},
+		{
+			mode = "n",
+			"<leader>gb",
+			"<cmd>lua Git_backup()<CR>",
+			desc = "Backup",
+			nowait = true,
+		},
+		{
+			mode = "n",
+			"<leader>gs",
+			"<cmd>lua Git_force_sync()<CR>",
+			desc = "Force Sync",
+			nowait = true,
 		},
 
-		l = {
-			name = "LSP",
-			a = { "<cmd>lua vim.lsp.buf.code_action()<CR>", "Code Action" },
-			i = { "<cmd>LspInfo<CR>", "Lsp Info" },
-			r = { "<cmd>LspRestart<CR>", "Restart Lsp Server" },
+		{
+			mode = "n",
+			"<leader>f",
+			group = "Telescope Find",
+			nowait = true,
+		},
+		{
+			mode = "n",
+			"<leader>ff",
+			"<cmd>Telescope find_files<CR>",
+			desc = "Find Files",
+			nowait = true,
+		},
+		{
+			mode = "n",
+			"<leader>fe",
+			"<cmd>Telescope emoji<CR>",
+			desc = "Find Emoji",
+			nowait = true,
+		},
+		{
+			mode = "n",
+			"<leader>fg",
+			"<cmd>Telescope live_grep<CR>",
+			desc = "Find Grep",
+			nowait = true,
 		},
 
-		s = {
-			name = "Search",
-			s = { "<cmd>lua require('spectre').open()<CR>", "Search" },
+		{
+			mode = "n",
+			"<leader>l",
+			group = "LSP",
+			nowait = true,
+		},
+		{
+			mode = "n",
+			"<leader>la",
+			"<cmd>lua vim.lsp.buf.code_action()<CR>",
+			desc = "Code Action",
+			nowait = true,
+		},
+		{
+			mode = "n",
+			"<leader>lI",
+			"<cmd>LspInstallInfo<CR>",
+			desc = "Installer Info",
+			nowait = true,
+		},
+		{
+			mode = "n",
+			"<leader>lr",
+			"<cmd>LspRestart<CR>",
+			desc = "Restart Lsp Server",
+			nowait = true,
 		},
 
-		t = {
-			name = "Test",
-			o = { "<cmd>TestNearest<CR>", "Nearest" },
-			w = {
-				"<cmd>silent !tmux split-window -h<CR><cmd>silent !tmux send-keys 'yarn test:watch <C-r>%' C-m;<CR><cmd>silent !tmux select-pane -t 0<CR>",
-				"Nearest watch",
-			},
-			r = { "<cmd>lua require 'rest-nvim'.run()<CR>", "Run REST-API" },
+		{
+			mode = "n",
+			"<leader>s",
+			group = "Search",
+			nowait = true,
+		},
+		{
+			mode = "n",
+			"<leader>ss",
+			"<cmd>lua require('spectre').open()<CR>",
+			desc = "Search",
+			nowait = true,
 		},
 
-		T = {
-			name = "Terminal",
-			f = { "<cmd>ToggleTerm direction=float<CR>", "Float" },
-			h = { "<cmd>ToggleTerm size=10 direction=horizontal<CR>", "Horizontal" },
-			v = { "<cmd>ToggleTerm size=80 direction=vertical<CR>", "Vertical" },
-			i = { "<cmd>:TSModuleInfo<CR>", "TresitterModuleInfo" },
+		{
+			mode = "n",
+			"<leader>t",
+			group = "Test",
+			nowait = true,
+		},
+		{
+			mode = "n",
+			"<leader>to",
+			"<cmd>TestNearest<CR>",
+			desc = "Nearest",
+			nowait = true,
+		},
+		{
+			mode = "n",
+			"<leader>tw",
+			"<cmd>silent !tmux split-window -h<CR><cmd>silent !tmux send-keys 'yarn test:watch <C-r>%' C-m;<CR><cmd>silent !tmux select-pane -t 0<CR>",
+			desc = "Nearest watch",
+			nowait = true,
+		},
+		{
+			mode = "n",
+			"<leader>tr",
+			"<cmd>lua require 'rest-nvim'.run()<CR>",
+			desc = "Run REST-API",
+			nowait = true,
 		},
 
-		M = {
-			"<cmd>:Mason<CR>",
-			"Mason",
+		{
+			mode = "n",
+			"<leader>T",
+			group = "Terminal",
+			nowait = true,
 		},
-	}
-
-	local visual_mode_opts = {
-		mode = "v", -- VISUAL mode
-		prefix = "<leader>",
-		buffer = nil, -- Global mappings. Specify a buffer number for buffer local mappings
-		silent = true, -- use `silent` when creating keymaps
-		noremap = true, -- use `noremap` when creating keymaps
-		nowait = true, -- use `nowait` when creating keymaps
-	}
-
-	local visual_mode_mappings = {
-		f = {
-			name = "Telescope Find",
-			g = { "y<ESC><cmd>Telescope grep_string<CR>", "Find Grep" },
+		{
+			mode = "n",
+			"<leader>Tf",
+			"<cmd>ToggleTerm direction=float<CR>",
+			desc = "Float",
+			nowait = true,
 		},
-
-		s = {
-			name = "Search",
-			s = { "<cmd>lua require('spectre').open_visual({select_word=true})<CR>", "Search with select word" },
+		{
+			mode = "n",
+			"<leader>Th",
+			"<cmd>ToggleTerm size=10 direction=horizontal<CR>",
+			desc = "Horizontal",
+			nowait = true,
+		},
+		{
+			mode = "n",
+			"<leader>Tv",
+			"<cmd>ToggleTerm size=80 direction=vertical<CR>",
+			desc = "Vertical",
+			nowait = true,
+		},
+		{
+			mode = "v",
+			"<leader>f",
+			group = "Telescope Find",
+			nowait = true,
+		},
+		{
+			mode = "v",
+			"<leader>fg",
+			"y<ESC><cmd>Telescope grep_string<CR>",
+			desc = "Find Grep",
+			nowait = true,
+		},
+		{
+			mode = "v",
+			"<leader>s",
+			group = "Search",
+			nowait = true,
+		},
+		{
+			mode = "v",
+			"<leader>ss",
+			"<cmd>lua require('spectre').open_visual({select_word=true})<CR>",
+			desc = "Search",
+			nowait = true,
 		},
 	}
 
 	local which_key = require("which-key")
 
+	which_key.add(mappings)
 	which_key.setup(setup)
-	which_key.register(normal_mode_mappings, normal_mode_opts)
-	which_key.register(visual_mode_mappings, visual_mode_opts)
 end
 
 return M
