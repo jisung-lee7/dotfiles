@@ -152,13 +152,13 @@ M.config = function()
     handlers = {
       cursor = true,
       diagnostic = true,
-      gitsigns = true, -- Requires gitsigns
+      gitsigns = false, -- Requires gitsigns
       handle = true,
       search = true, -- Requires hlslens
-      ale = false,  -- Requires ALE
+      ale = false,   -- Requires ALE
     },
   }
-  require("scrollbar.handlers.gitsigns").setup()
+  -- require("scrollbar.handlers.gitsigns").setup()
   require("scrollbar.handlers.search").setup({
     virt_priority = 1,
     nearest_only = true,
