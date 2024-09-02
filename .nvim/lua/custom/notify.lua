@@ -9,7 +9,18 @@ M.config = function()
     background_colour = "#000000",
   }
 
-  vim.notify = require("notify")
+  -- hide 'No information available'
+  local banned_messages = { "No information available" }
+  vim.notify = function(msg, ...)
+    for _, banned in ipairs(banned_messages) do
+      if msg == banned then
+        return
+      end
+    end
+    return require("notify")(msg, ...)
+  end
+
+  -- vim.notify = require("notify")
   notify.setup(setup)
 end
 
