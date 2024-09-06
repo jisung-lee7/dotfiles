@@ -29,6 +29,7 @@ spec("custom.autopairs") -- this should be after cmp
 spec("custom.autotag")
 spec("custom.test")
 spec("custom.markdown-preview")
+spec("custom.render-markdown")
 spec("custom.bookmarks")
 spec("custom.nvim-scrollbar")
 
