@@ -44,6 +44,7 @@ M.config = function()
     highlight RenderMarkdownCode guibg=NONE cterm=bold
     highlight RenderMarkdownCodeInline guibg=NONE cterm=bold
     " highlight RenderMarkdownBullet guifg=#ff9e64
+    highlight RenderMarkdownLink guifg=#2F9D27
   ]])
 end
 

@@ -52,6 +52,9 @@ M.config = function()
 				inprogress_3 = { raw = "[O]", rendered = "🌖", highlight = "RenderMarkdownTodo" },
 			},
 		},
+		link = {
+			highlight = "RenderMarkdownLink",
+		},
 	}
 
 	render_markdown.setup(setup)
