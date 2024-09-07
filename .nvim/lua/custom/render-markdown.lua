@@ -21,6 +21,18 @@ M.config = function()
 			icons = { "#[H1]", "##[H2]", "###[H3]", "####[H4]", "#####[H5]", "######[H6]" },
 			-- icons = { "[H1]#", "[H2]##", "[H3]###", "[H4]####", "[H5]#####", "[H6]######" },
 		},
+		bullet = {
+			-- Turn on / off list bullet rendering
+			enabled = true,
+			-- Replaces '-'|'+'|'*' of 'list_item'
+			-- How deeply nested the list is determines the 'level'
+			-- The 'level' is used to index into the array using a cycle
+			-- If the item is a 'checkbox' a conceal is used to hide the bullet instead
+			-- icons = { '●', '○', '◆', '◇' },
+			icons = { "•", "◦", "‣", "⁃" },
+			-- Highlight for the bullet icon
+			highlight = "RenderMarkdownBullet",
+		},
 		checkbox = {
 			unchecked = { icon = "🌑", highlight = "RenderMarkdownUnchecked" },
 			checked = { icon = "🌕", highlight = "RenderMarkdownChecked" },
