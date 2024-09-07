@@ -35,12 +35,12 @@ M.config = function()
     highlight @markup.heading.4.markdown cterm=bold gui=bold guifg=#87cefa
     highlight @markup.heading.5.markdown cterm=bold gui=bold guifg=#7b68ee
     highlight @markup.heading.6.markdown cterm=bold gui=bold guifg=#d8bfd8
-    highlight RenderMarkdownH1Bg guibg=#24293b
-    highlight RenderMarkdownH2Bg guibg=NONE
-    highlight RenderMarkdownH3Bg guibg=NONE
-    highlight RenderMarkdownH4Bg guibg=NONE
-    highlight RenderMarkdownH5Bg guibg=NONE
-    highlight RenderMarkdownH6Bg guibg=NONE
+    highlight RenderMarkdownH1Bg guibg=#361a1a
+    highlight RenderMarkdownH2Bg guibg=#362a1a
+    highlight RenderMarkdownH3Bg guibg=#36361a
+    highlight RenderMarkdownH4Bg guibg=#1a362a
+    highlight RenderMarkdownH5Bg guibg=#1a2a36
+    highlight RenderMarkdownH6Bg guibg=#2a1a36
     highlight RenderMarkdownBullet guifg=#ff9e64
   ]])
 end
