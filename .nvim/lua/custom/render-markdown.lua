@@ -21,6 +21,16 @@ M.config = function()
 			icons = { "#[H1]", "##[H2]", "###[H3]", "####[H4]", "#####[H5]", "######[H6]" },
 			-- icons = { "[H1]#", "[H2]##", "[H3]###", "[H4]####", "[H5]#####", "[H6]######" },
 		},
+		code = {
+			border = "thin",
+			-- Used above code blocks for thin border
+			above = "∙",
+			-- Used below code blocks for thin border
+			below = "∙",
+			highlight = "RenderMarkdownCode",
+			-- Highlight for inline code
+			highlight_inline = "RenderMarkdownCodeInline",
+		},
 		bullet = {
 			-- Turn on / off list bullet rendering
 			enabled = true,
