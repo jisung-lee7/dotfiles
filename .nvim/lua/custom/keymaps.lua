@@ -63,8 +63,10 @@ vim.cmd([[
   nnoremap <silent> <Leader>cp :let @+ = expand("%")<CR>
 
   " console log
-  nnoremap <silent> <Leader>cl :put=['console.log(`c.log ## <C-r><C-w> ##`, <C-r><C-w>);']<CR>-2==+
-  xnoremap <silent> <Leader>cl y:<C-u> put=['console.log(`c.log ## <C-r>" ##`, <C-r>");']<CR>-2==+
+  nnoremap <silent> <Leader>cl :put=['console.log(<C-r><C-w>);']<CR>-2==+
+  xnoremap <silent> <Leader>cl y:<C-u> put=['console.log(<C-r>");']<CR>-2==+
+  " nnoremap <silent> <Leader>cl :put=['console.log(`c.log ## <C-r><C-w> ##`, <C-r><C-w>);']<CR>-2==+
+  " xnoremap <silent> <Leader>cl y:<C-u> put=['console.log(`c.log ## <C-r>" ##`, <C-r>");']<CR>-2==+
 
   " CodeSnap
   xnoremap <silent> <Leader>cc :CodeSnap<CR>
