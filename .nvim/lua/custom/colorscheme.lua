@@ -26,8 +26,8 @@ M.config = function()
     highlight NvimTreeCursorLine guifg=#ef8d34
     highlight GitSignsCurrentLineBlame guifg=#ffffff
     highlight PmenuSel guibg=gray ctermbg=gray
-    highlight CursorLine guifg=NONE guibg=#223843
-    highlight Visual guifg=NONE guibg=#223843
+    highlight CursorLine guifg=NONE guibg=#00334f
+    highlight Visual guifg=NONE guibg=#30505f
 
     " render-markdown highlights
     highlight @markup.heading.1.markdown cterm=bold gui=bold guifg=#ff6800
