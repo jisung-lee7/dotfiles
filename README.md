@@ -73,6 +73,12 @@ Must be setted after Google Drive.
             - Korean
          3. Show the floating DeepL icon 
             - Disable
+      - React Developer Tools
+         ```
+         https://chromewebstore.google.com/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi
+         ```
+         1. Dropdown `On all sites`
+         2. Check `Allow access to file URLs`
    
 
 ## :rocket: Logi Options+
