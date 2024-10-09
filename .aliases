@@ -95,5 +95,7 @@ alias pts="cd ~/code/personal/play-typescript/"
 alias pnj="cd ~/code/personal/play-nextjs14/"
 ### change directory to Play-JesT
 alias pjt="cd ~/code/personal/play-jest/"
+### change directory to Play-ReaCt
+alias prc="cd ~/code/personal/play-react/"
 ### change directory to Play-ReactTestingLibrary
 alias prtl="cd ~/code/personal/play-RTL/"
