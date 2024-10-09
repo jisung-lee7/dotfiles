@@ -72,6 +72,10 @@ vim.cmd([[
   xnoremap <silent> <Leader>cc :CodeSnap<CR>
   xnoremap <silent> <Leader>cs :CodeSnapSave<CR>
 
+  " Ccc
+  nnoremap <silent> <Leader>cc :CccHighlighterToggle<CR>
+  nnoremap <silent> <Leader>ccp :CccPick<CR>
+
   " replace
   nnoremap <Leader>rp :%s/<C-r><C-w>//g<Left><Left>
   nnoremap <Leader>rc :%s/<C-r><C-w>//gc<Left><Left><Left>
