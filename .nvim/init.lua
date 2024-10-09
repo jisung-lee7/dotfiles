@@ -33,6 +33,7 @@ spec("custom.markdown-preview")
 spec("custom.render-markdown")
 spec("custom.bookmarks")
 spec("custom.nvim-scrollbar")
+spec("custom.nvim-colorizer")
 
 -- vim extra combinations start
 spec("custom.subversive")
