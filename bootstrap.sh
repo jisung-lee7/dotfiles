@@ -82,12 +82,12 @@ function installPackages() {
   echo "----------------------------------------------------------------------"
   brew install --cask brave-browser
 
-  echo $"\n\n\n"
-  echo "----------------------------------------------------------------------"
-  echo "########## Install firefox developer edition"
-  echo "----------------------------------------------------------------------"
-  #brew tap homebrew/cask-versions
-  brew install --cask firefox@developer-edition
+  # echo $"\n\n\n"
+  # echo "----------------------------------------------------------------------"
+  # echo "########## Install firefox developer edition"
+  # echo "----------------------------------------------------------------------"
+  # brew tap homebrew/cask-versions
+  # brew install --cask firefox@developer-edition
 
   echo $"\n\n\n"
   echo "----------------------------------------------------------------------"
