@@ -91,8 +91,8 @@ alias cff="cd ~/code/frontend/coding-for-fun-org/frontend/"
 alias pjs="cd ~/code/personal/play-javascript/"
 ### change directory to Play-TypeScript
 alias pts="cd ~/code/personal/play-typescript/"
-### change directory to Play-NextJs14
-alias pnj="cd ~/code/personal/play-nextjs14/"
+### change directory to Play-NextJs
+alias pnj="cd ~/code/personal/play-nextjs/"
 ### change directory to Play-JesT
 alias pjt="cd ~/code/personal/play-jest/"
 ### change directory to Play-ReaCt
