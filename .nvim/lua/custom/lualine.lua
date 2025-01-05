@@ -1,6 +1,7 @@
 local M = {
   "nvim-lualine/lualine.nvim",
   version = "*",
+  commit = "640260d7c2d98779cab89b1e7088ab14ea354a02",
   dependencies = { "nvim-tree/nvim-web-devicons" },
 }
 
