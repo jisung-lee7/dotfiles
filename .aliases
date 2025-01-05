@@ -45,7 +45,6 @@ alias tls='tmux list-sessions'
 ### Tmux Kill Session
 alias tks='tmux kill-session -t'
 
-
 # Colima
 ### ColimA Start
 alias cas='colima start --cpu 4 --memory 8'
@@ -53,7 +52,6 @@ alias cas='colima start --cpu 4 --memory 8'
 alias caswk='colima start --cpu 4 --memory 8 --kubernetes'
 ### ColimA Terminate
 alias cat='colima stop'
-
 
 # Docker Compose
 ### Docker Compose Up
@@ -65,7 +63,6 @@ alias dcsp='docker compose down --remove-orphans --rmi all'
 ### Docker Compose Hard Purge
 alias dchp='docker compose down --remove-orphans -v --rmi all'
 
-
 # Git
 ### Git Remote Prune Origin
 alias grpo='git remote prune origin'
@@ -73,7 +70,6 @@ alias gsu='gh auth switch && gh auth setup-git'
 
 ### Git Reflog --date=iso
 alias gr='git reflog --date=iso'
-
 
 # Coding For Fun
 ## Change directory
