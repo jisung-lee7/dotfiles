@@ -31,7 +31,23 @@ This will install all the programs needed for development.
 After you install it do not for get, 
 1. Change your terminal font to 'Hack Nerd Font Mono'.
 2. Run 'Prefix + I' in tmux.
-3. Run 'Mason' and 'LspInfo' in neovim!
+3. Run 'Mason' and 'LspInfo' in Neovim, then install the following:
+```typescript
+◍ bash-language-server bashls (keywords: bash)
+◍ css-lsp cssls (keywords: css, scss, less)
+◍ dockerfile-language-server dockerls (keywords: docker)
+◍ eslint-lsp eslint (keywords: javascript, typescript)
+◍ html-lsp html (keywords: html)
+◍ json-lsp jsonls (keywords: json)
+◍ lua-language-server lua_ls (keywords: lua)
+◍ prettier (keywords: angular, css, flow, graphql, html, json, jsx, javascript, less, markdown, scss, typescript, vue, yaml)
+◍ prettierd (keywords: angular, css, flow, graphql, html, json, jsx, javascript, less, markdown, scss, typescript, vue, yaml)
+◍ shfmt (keywords: bash, mksh, shell)
+◍ stylua (keywords: lua, luau)
+◍ tailwindcss-language-server tailwindcss (keywords: css)
+◍ typescript-language-server ts_ls (keywords: typescript, javascript)
+```
+<br>
 
 :pushpin: **After that, you need to follow the instruction of each that**
 
