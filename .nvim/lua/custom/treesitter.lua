@@ -21,6 +21,8 @@ M.config = function()
       "json",
       "dockerfile",
       "http",
+      "bash",
+      "ssh_config",
       "python",
       "go",
       "graphql",

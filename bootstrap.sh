@@ -32,7 +32,7 @@ function installPackages() {
   echo "########## Upgrade any already-installed formulae"
   echo "----------------------------------------------------------------------"
   brew upgrade
-  
+
   echo $"\n\n\n"
   echo "----------------------------------------------------------------------"
   echo "########## Install Git"
@@ -178,7 +178,7 @@ function installPackages() {
   echo "########## Install Slack"
   echo "----------------------------------------------------------------------"
   brew install --cask slack
-  
+
   echo $"\n\n\n"
   echo "----------------------------------------------------------------------"
   echo "########## Install Chatgpt"
@@ -243,7 +243,7 @@ function doIt() {
   echo "----------------------------------------------------------------------"
   echo "########## Start installPackages"
   echo "----------------------------------------------------------------------"
-  installPackages;
+  installPackages
 
   echo $"\n\n\n"
   echo "----------------------------------------------------------------------"
@@ -265,28 +265,29 @@ function doIt() {
   ln -s ~/dotfiles/.exports ~/.exports
   ln -s ~/dotfiles/.extras ~/.extras
   ln -s ~/dotfiles/.profile ~/.zshrc
+  ln -s ~/dotfiles/.editorconfig ~/.editorconfig
 
   echo $"\n\n\n"
   echo "----------------------------------------------------------------------"
   echo "########## Configure docker"
   echo "----------------------------------------------------------------------"
-  echo -e "{\n\t\"cliPluginsExtraDirs\": [\n\t\t\"/opt/homebrew/lib/docker/cli-plugins\"\n\t],\n\t\"currentContext\": \"colima\"\n}" > ~/.docker/config.json
+  echo -e "{\n\t\"cliPluginsExtraDirs\": [\n\t\t\"/opt/homebrew/lib/docker/cli-plugins\"\n\t],\n\t\"currentContext\": \"colima\"\n}" >~/.docker/config.json
 
   source ~/.zshrc
 }
 
-  echo $"\n\n\n"
-  echo "----------------------------------------------------------------------"
-  echo "########## Start doIt"
-  echo "----------------------------------------------------------------------"
-  doIt;
+echo $"\n\n\n"
+echo "----------------------------------------------------------------------"
+echo "########## Start doIt"
+echo "----------------------------------------------------------------------"
+doIt
 
-  echo $"\n\n\n"
-  echo "----------------------------------------------------------------------"
-  echo "########## Configurations are done!"
-  echo "########## Do not forget to run 'Prefix + I' in tmux!"
-  echo "########## Do not forget to run 'Mason' and 'LspInfo' in neovim!"
-  echo "----------------------------------------------------------------------"
+echo $"\n\n\n"
+echo "----------------------------------------------------------------------"
+echo "########## Configurations are done!"
+echo "########## Do not forget to run 'Prefix + I' in tmux!"
+echo "########## Do not forget to run 'Mason' and 'LspInfo' in neovim!"
+echo "----------------------------------------------------------------------"
 
-unset installPackages;
-unset doIt;
+unset installPackages
+unset doIt

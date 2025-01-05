@@ -140,6 +140,7 @@ M.config = function()
     "dockerls",
     "eslint",
     "lua_ls",
+    "bashls",
   }
   local mason_setup = {
     ui = {

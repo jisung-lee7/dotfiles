@@ -17,6 +17,8 @@ M.config = function()
 		sources = {
 			formatting.stylua,
 			formatting.prettier,
+			-- bash
+			formatting.shfmt,
 		},
 		on_attach = function(client, bufnr)
 			-- the Buffer will be null in buffers like nvim-tree or new unsaved files
