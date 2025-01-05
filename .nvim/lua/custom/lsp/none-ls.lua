@@ -9,7 +9,7 @@ local M = {
 
 M.config = function()
 	local null_ls = require("null-ls")
-	-- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/formatting
+	-- https://github.com/nvimtools/none-ls.nvim/blob/main/doc/BUILTINS.md
 	local formatting = null_ls.builtins.formatting
 	local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 	local setup = {
