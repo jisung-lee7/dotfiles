@@ -1,5 +1,6 @@
 local M = {
   "windwp/nvim-spectre",
+  version = "*",
   dependencies = {
     "nvim-lua/plenary.nvim",
   },

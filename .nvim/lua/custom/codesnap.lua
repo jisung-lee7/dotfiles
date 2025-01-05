@@ -1,5 +1,6 @@
 local M = {
   "mistricky/codesnap.nvim",
+  version = "*",
   build = "make",
 }
 

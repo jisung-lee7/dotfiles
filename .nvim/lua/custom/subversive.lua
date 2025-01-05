@@ -1,5 +1,6 @@
 local M = {
   "svermeulen/vim-subversive",
+  version = "*",
 }
 
 M.config = function()

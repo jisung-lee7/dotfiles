@@ -1,5 +1,6 @@
 local M = {
 	"folke/snacks.nvim",
+	version = "*",
 }
 M.config = function()
 	local snacks = require("snacks")

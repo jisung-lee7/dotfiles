@@ -1,5 +1,6 @@
 local M = {
   "vim-test/vim-test",
+  version = "*",
 }
 
 M.config = function()

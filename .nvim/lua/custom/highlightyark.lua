@@ -1,5 +1,6 @@
 local M = {
   "machakann/vim-highlightedyank",
+  version = "*",
 }
 
 M.config = function()
