@@ -16,6 +16,7 @@ M.config = function()
       "scss",
       "lua",
       "markdown",
+      "markdown_inline",
       "vim",
       "json",
       "dockerfile",

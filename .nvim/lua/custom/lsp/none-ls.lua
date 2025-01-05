@@ -1,5 +1,10 @@
 local M = {
 	"nvimtools/none-ls.nvim",
+	dependencies = {
+		{
+			"nvim-lua/plenary.nvim",
+		},
+	},
 }
 
 M.config = function()
@@ -8,12 +13,13 @@ M.config = function()
 	local formatting = null_ls.builtins.formatting
 	local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 	local setup = {
-		debug = false,
+		debug = true,
 		sources = {
 			formatting.stylua,
 			formatting.prettier,
 		},
 		on_attach = function(client, bufnr)
+			-- the Buffer will be null in buffers like nvim-tree or new unsaved files
 			if not bufnr then
 				return
 			end
