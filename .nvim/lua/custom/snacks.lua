@@ -17,7 +17,7 @@ M.config = function()
 			},
 		},
 		input = {},
-		notifier = {},
+		-- notifier = {},
 	}
 	snacks.setup(setup)
 end
