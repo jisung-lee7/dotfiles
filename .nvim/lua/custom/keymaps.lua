@@ -81,4 +81,7 @@ vim.cmd([[
   nnoremap <Leader>rc :%s/<C-r><C-w>//gc<Left><Left><Left>
   xnoremap <Leader>rp y:%s/\V<C-r>=escape(@", '/\')<CR>//g<Left><Left>
   xnoremap <Leader>rc y:'<,'>%s/\V<C-r>=escape(@", '/\')<CR>//gc<Left><Left><Left>
+
+  " vimwiki
+  nnoremap <silent> <Leader>wt :tabedit /Users/jisunglee/jisung-lee-wiki/vimwiki/index.md<CR>
 ]])
