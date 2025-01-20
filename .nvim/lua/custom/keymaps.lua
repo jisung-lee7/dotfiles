@@ -84,4 +84,7 @@ vim.cmd([[
 
   " vimwiki
   nnoremap <silent> <Leader>wt :tabedit /Users/jisunglee/jisung-lee-wiki/vimwiki/index.md<CR>
+
+  " refresh
+  nnoremap <Leader>rr :e<CR>:echo "Refresh"<CR>
 ]])
