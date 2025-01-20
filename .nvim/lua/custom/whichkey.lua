@@ -180,6 +180,13 @@ M.config = function()
 		},
 		{
 			mode = "n",
+			"<leader>gr",
+			"<cmd>lua require 'gitsigns'.reset_base()<CR>",
+			desc = "gitsigns reset_base",
+			nowait = true,
+		},
+		{
+			mode = "n",
 			"<leader>gu",
 			"<cmd>silent !gh auth switch && gh auth setup-git && tmux refresh-client -S<cr>",
 			desc = "gh switch user",
