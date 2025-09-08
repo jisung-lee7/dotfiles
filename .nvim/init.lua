@@ -1,47 +1,47 @@
 -- this should be called first so we can use spec func
-require("custom.launch")
+require "custom.launch"
 
-require("custom.keymaps")
-require("custom.options")
-require("custom.autocommands")
+require "custom.keymaps"
+require "custom.options"
+require "custom.autocommands"
+
+spec "custom.colorscheme"
 
 -- lsp
-spec("custom.lsp.mason")
-spec("custom.lsp.none-ls")
-spec("custom.lsp.lsp-signature")
+spec "plugins.lsp.mason"
+spec "plugins.lsp.none-ls"
+spec "plugins.lsp.lsp-signature"
 
-spec("custom.codesnap")
-spec("custom.whichkey")
-spec("custom.notify")
-spec("custom.typescript")
-spec("custom.colorscheme")
-spec("custom.comment")
-spec("custom.vimwiki")
-spec("custom.highlightyark")
--- spec("custom.indent-blankline")
-spec("custom.snacks")
-spec("custom.treesitter")
-spec("custom.nvim-tree")
-spec("custom.telescope")
-spec("custom.lualine")
-spec("custom.gitsigns")
-spec("custom.floaterm")
-spec("custom.cmp")
-spec("custom.autopairs") -- this should be after cmp
-spec("custom.autotag")
-spec("custom.test")
-spec("custom.markdown-preview")
-spec("custom.render-markdown")
-spec("custom.bookmarks")
-spec("custom.nvim-scrollbar")
--- spec("custom.nvim-colorizer")
-spec("custom.ccc")
+spec "plugins.codesnap"
+spec "plugins.whichkey"
+spec "plugins.notify"
+spec "plugins.typescript"
+spec "plugins.comment"
+spec "plugins.vimwiki"
+spec "plugins.highlightyark"
+spec "plugins.snacks"
+spec "plugins.treesitter"
+spec "plugins.nvim-tree"
+spec "plugins.telescope"
+spec "plugins.lualine"
+-- spec "plugins.bufferline"
+spec "plugins.gitsigns"
+spec "plugins.floaterm"
+spec "plugins.cmp"
+spec "plugins.autopairs" -- this should be after cmp
+spec "plugins.autotag"
+spec "plugins.test"
+spec "plugins.markdown.render-markdown"
+spec "plugins.markdown.markdown-preview"
+spec "plugins.bookmarks"
+spec "plugins.nvim-scrollbar"
+spec "plugins.ccc"
 
 -- vim extra combinations start
-spec("custom.subversive")
-spec("custom.surround")
+spec "plugins.subversive"
+spec "plugins.surround"
 
 -- search and replace text
-spec("custom.spectre")
+spec "plugins.spectre"
 
-require("custom.lazy") -- this should be the last
+require "custom.lazy" -- this should be the last

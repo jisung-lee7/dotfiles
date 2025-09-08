@@ -7,8 +7,6 @@ function installPackages() {
   echo "----------------------------------------------------------------------"
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-  source ~/.zshrc
-
   echo $"\n\n\n"
   echo "----------------------------------------------------------------------"
   echo "########## Set Homebrew"
@@ -60,7 +58,7 @@ function installPackages() {
 
   echo $"\n\n\n"
   echo "----------------------------------------------------------------------"
-  echo "########## Install fonts for Hack Nerd Font Mono"
+  echo "########## Install fonts for Hack Nerd Font"
   echo "----------------------------------------------------------------------"
   brew install --cask font-hack-nerd-font
 
@@ -70,24 +68,11 @@ function installPackages() {
   echo "----------------------------------------------------------------------"
   brew install powerlevel10k
 
-  # echo $"\n\n\n"
-  # echo "----------------------------------------------------------------------"
-  # echo "########## Install Figma"
-  # echo "----------------------------------------------------------------------"
-  # brew install --cask figma
-
   echo $"\n\n\n"
   echo "----------------------------------------------------------------------"
   echo "########## Install Brave browser"
   echo "----------------------------------------------------------------------"
   brew install --cask brave-browser
-
-  # echo $"\n\n\n"
-  # echo "----------------------------------------------------------------------"
-  # echo "########## Install firefox developer edition"
-  # echo "----------------------------------------------------------------------"
-  # brew tap homebrew/cask-versions
-  # brew install --cask firefox@developer-edition
 
   echo $"\n\n\n"
   echo "----------------------------------------------------------------------"
@@ -124,29 +109,41 @@ function installPackages() {
   # ref: https://github.com/neovim/neovim/blob/master/INSTALL.md#install-from-package
   brew install neovim
 
-  echo $"\n\n\n"
-  echo "----------------------------------------------------------------------"
-  echo "########## Install Docker"
-  echo "----------------------------------------------------------------------"
-  brew install docker docker-compose
+  # echo $"\n\n\n"
+  # echo "----------------------------------------------------------------------"
+  # echo "########## Install Docker"
+  # echo "----------------------------------------------------------------------"
+  # brew install docker docker-compose
+
+  # echo $"\n\n\n"
+  # echo "----------------------------------------------------------------------"
+  # echo "########## Install Colima"
+  # echo "----------------------------------------------------------------------"
+  # brew install colima
 
   echo $"\n\n\n"
   echo "----------------------------------------------------------------------"
-  echo "########## Install Colima"
+  echo "########## Install node@22"
   echo "----------------------------------------------------------------------"
-  brew install colima
+  brew install node@22
 
   echo $"\n\n\n"
   echo "----------------------------------------------------------------------"
-  echo "########## Install node@20"
+  echo "########## Install prettier"
   echo "----------------------------------------------------------------------"
-  brew install node@20
+  brew install prettier
 
   echo $"\n\n\n"
   echo "----------------------------------------------------------------------"
   echo "########## Install gh"
   echo "----------------------------------------------------------------------"
   brew install gh
+
+  echo $"\n\n\n"
+  echo "----------------------------------------------------------------------"
+  echo "########## Install stylua"
+  echo "----------------------------------------------------------------------"
+  brew install stylua
 
   echo $"\n\n\n"
   echo "----------------------------------------------------------------------"
@@ -166,11 +163,11 @@ function installPackages() {
   echo "----------------------------------------------------------------------"
   brew install gnu-sed
 
-  echo $"\n\n\n"
-  echo "----------------------------------------------------------------------"
-  echo "########## Install Slack"
-  echo "----------------------------------------------------------------------"
-  brew install --cask slack
+  # echo $"\n\n\n"
+  # echo "----------------------------------------------------------------------"
+  # echo "########## Install Slack"
+  # echo "----------------------------------------------------------------------"
+  # brew install --cask slack
 
   echo $"\n\n\n"
   echo "----------------------------------------------------------------------"
@@ -279,7 +276,7 @@ echo $"\n\n\n"
 echo "----------------------------------------------------------------------"
 echo "########## Configurations are done!"
 echo "########## Do not forget to run 'Prefix + I' in tmux!"
-echo "########## Do not forget to run 'Mason' and 'LspInfo' in neovim!"
+echo "########## Do not forget to run 'Mason' in neovim!"
 echo "----------------------------------------------------------------------"
 
 unset installPackages

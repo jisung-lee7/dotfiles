@@ -58,7 +58,7 @@ keymap("x", "J", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
 
 -- ####### vim.cmd
-vim.cmd([[
+vim.cmd [[
   " copy current file path to clipboard
   nnoremap <silent> <Leader>cp :let @+ = expand("%")<CR>
 
@@ -87,4 +87,4 @@ vim.cmd([[
 
   " refresh
   nnoremap <Leader>rr :e<CR>:echo "Refresh"<CR>
-]])
+]]

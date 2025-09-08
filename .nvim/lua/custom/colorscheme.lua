@@ -4,7 +4,7 @@ local M = {
 }
 
 M.config = function()
-  local gruvbox = require("gruvbox")
+  local gruvbox = require "gruvbox"
   local setup = {
     terminal_colors = true,
     transparent_mode = true,
@@ -12,7 +12,7 @@ M.config = function()
 
   gruvbox.setup(setup)
 
-  vim.cmd([[
+  vim.cmd [[
     " set the colorscheme and highlight here
     set background=dark
     colorscheme gruvbox
@@ -46,7 +46,7 @@ M.config = function()
     highlight RenderMarkdownCodeInline guibg=NONE cterm=bold
     " highlight RenderMarkdownBullet guifg=#ff9e64
     highlight RenderMarkdownLink guifg=#2F9D27
-  ]])
+  ]]
 end
 
 return M
