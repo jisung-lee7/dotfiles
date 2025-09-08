@@ -15,7 +15,7 @@ If you are using others,, **Please change your computer.**:zipper_mouth_face: <b
 It's totally up to you. I just cloned it inside my home directory folder using following command.
 
 ```zsh
-git clone https://github.com/jskurt/dotfiles.git
+git clone https://github.com/jisung-lee7/dotfiles.git
 ```
 
 The Mac OS will automatically install a 'git' when you run the command.
@@ -29,9 +29,9 @@ sh bootstrap.sh
 
 This will install all the programs needed for development.
 After you install it do not for get, 
-1. Change your terminal font to 'Hack Nerd Font Mono'.
+1. Change your terminal font to 'Hack Nerd Font'.
 2. Run 'Prefix + I' in tmux.
-3. Run 'Mason' and 'LspInfo' in Neovim, then install the following:
+3. Run 'Mason' in Neovim, then install the following:
 ```typescript
 ◍ bash-language-server bashls (keywords: bash)
 ◍ css-lsp cssls (keywords: css, scss, less)
@@ -212,8 +212,8 @@ You must connect after Bluetooth connection.
 
 
 ### :black_small_square: Passwords
-   1. Password Options
-      - Disable 'AutoFill Passwords and Passkeys'
+   1. System setting/일반/자동 완성 및 암호
+      - Disable '암호 및 패스키 자동 완성'
    2. Enable 'Delete After Use'
 
 
@@ -221,6 +221,12 @@ You must connect after Bluetooth connection.
    - follow image below
 <img width="487" alt="image" src="https://github.com/jskurt/dotfiles/assets/97920073/4b6f6877-dfdd-4f89-b91a-884cad6d0414">
 <img width="634" alt="image" src="https://github.com/jskurt/dotfiles/assets/97920073/d29a1597-0353-49de-87a4-8397d062f562">
+
+   - 키보드/키보드 단축키.../앱 단축키/
+      1. Modify alacritty
+      2. Modify Brave Browser
+<img width="705" height="612" alt="image" src="https://github.com/user-attachments/assets/81f3bc5c-d1ac-4f91-b697-90273f32b77f" />
+
 
 
 ### :black_small_square: Mouse
@@ -236,10 +242,19 @@ You must connect after Bluetooth connection.
 <img width="490" alt="image" src="https://github.com/jskurt/dotfiles/assets/97920073/754fb040-a182-43b6-9f2a-0336af47f126">
 
 
+### :black_small_square: Contacts
+   1. 연락처/설정/계정/+
+      - Google 추가
+   2. 연락처/설정/일반/기본계정
+      - Google 선택
+
+
 ### :black_small_square: FaceTime
    1. FaceTime/Settings/You can be reached for FaceTime at
       - Only use 1 phone number, 1 address.
-   2. Start new calls from
+   2. FaceTime Live Photo
+      - Disable '영상 통화 중에 Live Photo를 캡처하도록 허용'
+   3. Start new calls from
       - Phone number.
 
 
@@ -250,6 +265,10 @@ You must connect after Bluetooth connection.
       - Phone number.
    3. Shared with You
       - Turn Off...
+
+
+### :black_small_square: Memo
+<img width="542" height="681" alt="image" src="https://github.com/user-attachments/assets/b9d3a94b-3911-4cc4-b482-94273c7b53b1" />
 
 
 ## :rocket: Custom key bindings
