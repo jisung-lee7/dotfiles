@@ -68,11 +68,17 @@ function installPackages() {
   echo "----------------------------------------------------------------------"
   brew install powerlevel10k
 
+  # echo $"\n\n\n"
+  # echo "----------------------------------------------------------------------"
+  # echo "########## Install Brave browser"
+  # echo "----------------------------------------------------------------------"
+  # brew install --cask brave-browser
+
   echo $"\n\n\n"
   echo "----------------------------------------------------------------------"
-  echo "########## Install Brave browser"
+  echo "########## Install Google Chrome browser"
   echo "----------------------------------------------------------------------"
-  brew install --cask brave-browser
+  brew install --cask google-chrome
 
   echo $"\n\n\n"
   echo "----------------------------------------------------------------------"
