@@ -176,7 +176,8 @@ M.config = function()
       lsp_options = vim.tbl_deep_extend("force", lsp_options, server_custom_options)
     end
 
-    lspconfig[server].setup(lsp_options)
+    vim.lsp.config(server, lsp_options)
+    vim.lsp.enable(server)
   end
 end
 
