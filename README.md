@@ -69,7 +69,7 @@ Must be setted after Google Drive.
    - Select your saved preferences folder
 
 
-## :rocket: Brave-Browser
+## :rocket: Google Chrome
 1. Settings
    1. Sync/Start using sysnc/I have a Sync Code
    2. install Extension
@@ -175,21 +175,22 @@ You must connect after Bluetooth connection.
    2. You need to reboot for it to take effect.
    
 
-### :black_small_square: Notifications
-   - follow image below
-<img width="482" alt="image" src="https://github.com/jskurt/dotfiles/assets/97920073/5b01f96b-f96b-4a4a-a373-73b7512f70fc">
+### :black_small_square: Battery
+   1. Charge...
+      - follow image below
+<img width="460" alt="image" src="https://github.com/user-attachments/assets/7d52424c-6b29-46d1-84e8-78205b3bcbfb" />
 
+   2. Options...
+      - follow image below
+<img width="460" alt="image" src="https://github.com/jskurt/dotfiles/assets/97920073/6d05e7d6-42c4-4317-b04a-90340c1fbff4">
+   
+   
+### :black_small_square: 일반
+   1. 자동 완성 및 암호
+      - Disable '암호 및 패스키 자동 완성'
+   2. Enable 'Delete After Use'
 
-### :black_small_square: Sound
-   - follow image below
-<img width="480" alt="image" src="https://github.com/jskurt/dotfiles/assets/97920073/a003e7e9-5251-4257-9236-0a66d2b60522">
-
-
-### :black_small_square: Accessibility
-   1. Display/Pointer
-      - OFF 'Shake mouse pointer to locate'
-
-
+   
 ### :black_small_square: Desktop & Dock
    - follow image below
 <img width="481" alt="image" src="https://github.com/jskurt/dotfiles/assets/97920073/c27c3888-a2e2-4636-97a1-a82424599873">
@@ -200,21 +201,34 @@ You must connect after Bluetooth connection.
    2. Disable 'Automatically adjust brightness'
 
 
-### :black_small_square: Battery
-   1. Options...
-      - follow image below
-<img width="460" alt="image" src="https://github.com/jskurt/dotfiles/assets/97920073/6d05e7d6-42c4-4317-b04a-90340c1fbff4">
+### :black_small_square: Accessibility
+   1. Display/Pointer
+      - OFF 'Shake mouse pointer to locate'
+   2. 포인터 제어/트랙패드 옵션..
+      - 드래그에 트랙패드 사용
+         - ON
+      - 드래그 스타일
+         - 세 손가락으로 드래그하기
+
+
+### :black_small_square: 화면 모드
+   - follow image below
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/0ea72b5d-a4ea-4f5d-a6d7-20874a5b8779" />
+
+
+### :black_small_square: Notifications
+   - follow image below
+<img width="482" alt="image" src="https://github.com/jskurt/dotfiles/assets/97920073/5b01f96b-f96b-4a4a-a373-73b7512f70fc">
+
+
+### :black_small_square: Sound
+   - follow image below
+<img width="480" alt="image" src="https://github.com/jskurt/dotfiles/assets/97920073/a003e7e9-5251-4257-9236-0a66d2b60522">
 
 
 ### :black_small_square: Lock Screen
    - follow image below
 <img width="487" alt="image" src="https://github.com/jskurt/dotfiles/assets/97920073/e401d54e-fe69-4d14-8514-af77b8991cb3">
-
-
-### :black_small_square: Passwords
-   1. System setting/일반/자동 완성 및 암호
-      - Disable '암호 및 패스키 자동 완성'
-   2. Enable 'Delete After Use'
 
 
 ### :black_small_square: Keyboard
@@ -224,15 +238,8 @@ You must connect after Bluetooth connection.
 
    - 키보드/키보드 단축키.../앱 단축키/
       1. Modify alacritty
-      2. Modify Brave Browser
-<img width="705" height="612" alt="image" src="https://github.com/user-attachments/assets/81f3bc5c-d1ac-4f91-b697-90273f32b77f" />
-
-
-
-### :black_small_square: Mouse
-   You must connect after Bluetooth connection.
-   - follow image below
-<img width="489" alt="image" src="https://github.com/jskurt/dotfiles/assets/97920073/fb1ebf28-edef-472a-aa1f-7bcee9b928a5">
+      2. Modify Google Chrome
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/220bb2fd-8f69-4539-b895-bdfa6ddacfab" />
 
 
 ### :black_small_square: Trackpad
@@ -240,6 +247,12 @@ You must connect after Bluetooth connection.
 <img width="489" alt="image" src="https://github.com/jskurt/dotfiles/assets/97920073/b29d6381-8f3e-45f5-a044-6c94d2e9eab2">
 <img width="491" alt="image" src="https://github.com/jskurt/dotfiles/assets/97920073/b15cd5a6-cb61-4728-b470-8fc139572e57">
 <img width="490" alt="image" src="https://github.com/jskurt/dotfiles/assets/97920073/754fb040-a182-43b6-9f2a-0336af47f126">
+
+
+### :black_small_square: Mouse
+   You must connect after Bluetooth connection.
+   - follow image below
+<img width="489" alt="image" src="https://github.com/jskurt/dotfiles/assets/97920073/fb1ebf28-edef-472a-aa1f-7bcee9b928a5">
 
 
 ### :black_small_square: Contacts
