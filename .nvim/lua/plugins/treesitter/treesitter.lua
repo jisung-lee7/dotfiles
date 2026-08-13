@@ -1,11 +1,11 @@
 local M = {
   "nvim-treesitter/nvim-treesitter",
-  version = "*",
+  -- version = "*",
   build = ":TSUpdate",
 }
 
 M.config = function()
-  local nvim_treesitter_config = require "nvim-treesitter.configs"
+  local nvim_treesitter_config = require "nvim-treesitter"
   local setup = {
     -- one of "all" or a list of languages
     ensure_installed = {
